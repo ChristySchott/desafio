@@ -18,8 +18,21 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --max-warnings=0",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
   },
   "browserslist": {
     "production": [
@@ -50,6 +63,8 @@
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.10",
     "jest": "^26.4.1",
-    "jest-styled-components": "^7.0.3"
+    "jest-styled-components": "^7.0.3",
+    "lint-staged": "^10.2.11",
+    "husky": "^4.2.5"
   }
 }
