@@ -16,11 +16,14 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "connect": "~3.6.6",
+    "serve-static": "~1.13.2"
   },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "dev:server": "node server.js",
     "test": "react-app-rewired test",
     "lint": "eslint --fix src/**/*.ts"
   },
