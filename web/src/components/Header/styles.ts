@@ -106,6 +106,7 @@ export const SearchIcon = styled.div`
 
 export const SearchInput = styled.div`
   display: none;
+  width: 50%;
 
   @media (min-width: 768px) {
     display: block;
