@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { BiSearch } from 'react-icons/bi';
 import logoImg from '../../assets/logo.png';
@@ -16,9 +16,20 @@ import {
 import Burger from '../Burger';
 import Menu from '../Menu';
 import Input from '../Input';
+import api from '../../services/api';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    async function loadCategories(): Promise<void> {
+      const response = await api.get('list');
+      setCategories(response.data);
+    }
+
+    loadCategories();
+  }, []);
 
   return (
     <Container>
@@ -61,15 +72,12 @@ const Header: React.FC = () => {
           <li>
             <a href="/">Página inicial</a>
           </li>
-          <li>
-            <a href="/">Camisetas</a>
-          </li>
-          <li>
-            <a href="/">Calças</a>
-          </li>
-          <li>
-            <a href="/">Sapatos</a>
-          </li>
+          {categories.length > 0 &&
+            categories.map(({ name, path }) => (
+              <li>
+                <a href={`/${path}`}>{name}</a>
+              </li>
+            ))}
           <li>
             <a href="/">Contato</a>
           </li>

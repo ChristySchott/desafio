@@ -27,7 +27,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "dev:server": "node server.js",
+    "dev:server": "json-server server.json -p 3333",
     "test": "react-app-rewired test",
     "lint": "eslint --fix src/**/*.ts"
   },
