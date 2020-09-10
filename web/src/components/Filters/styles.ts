@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 280px;
-  margin: 10px auto;
+  width: 290px;
+  margin: 10px auto 15px;
 `;
 
 export const Page = styled.div`
