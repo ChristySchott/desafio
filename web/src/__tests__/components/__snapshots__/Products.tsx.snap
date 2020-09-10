@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Products /> should render with no error 1`] = `
+<div
+  class="sc-bdnylx"
+>
+  <h2>
+    Sapatos
+  </h2>
+  <div
+    class="sc-gtssRu"
+  >
+    <span>
+      Ordernar por
+    </span>
+    <div
+      class="sc-dlnjPT"
+    >
+      Preço
+    </div>
+  </div>
+  <ul
+    class="sc-hKFyIo"
+  >
+    <div />
+  </ul>
+</div>
+`;
