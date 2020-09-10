@@ -7,6 +7,7 @@ import Product from './Product';
 
 import shirt from '../../assets/products/shirt-1.jpg';
 import Select from '../Select';
+import Paginator from '../Paginator';
 
 interface OptionTypes {
   value: string;
@@ -66,6 +67,8 @@ const Products: React.FC = () => {
           price="R$299,90"
         />
       </Items>
+
+      <Paginator />
     </Container>
   );
 };
