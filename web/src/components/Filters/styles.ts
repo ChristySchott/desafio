@@ -3,6 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 290px;
   margin: 10px auto 15px;
+
+  @media (min-width: 768px) {
+    width: 270px;
+    margin-top: 0;
+    margin-right: 25px;
+  }
 `;
 
 export const Page = styled.div`

@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.li`
   margin-top: 25px;
   width: 135px;
+
+  @media (min-width: 768px) {
+    width: 150px;
+  }
 `;
 
 export const Image = styled.div`
