@@ -2,19 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 
-import { Container, Page, Menu, Colors } from './styles';
+import { Container, Menu, Colors } from './styles';
 
 const Filters: React.FC = () => {
   return (
     <Container>
-      <Page>
-        <p>
-          <a href="/">Página Inicial </a>
-          &gt;
-          <span> Sapatos</span>
-        </p>
-      </Page>
-
       <Menu>
         <h2>Filtre por</h2>
 

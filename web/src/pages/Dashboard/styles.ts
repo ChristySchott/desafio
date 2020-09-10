@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Main = styled.div`
+export const Main = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,4 +19,21 @@ const Main = styled.div`
   }
 `;
 
-export default Main;
+export const Page = styled.div`
+  margin-bottom: 10px;
+  max-width: 1048px;
+  margin: 0 auto;
+  padding: 15px 0 0 15px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #100c14;
+  }
+
+  span {
+    color: #c61a28;
+  }
+`;

@@ -11,18 +11,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Page = styled.div`
-  margin-bottom: 10px;
-
-  a {
-    color: #100c14;
-  }
-
-  span {
-    color: #c61a28;
-  }
-`;
-
 export const Menu = styled.div`
   width: 100%;
   padding: 15px;

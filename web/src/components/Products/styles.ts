@@ -8,10 +8,6 @@ export const Container = styled.div`
     color: #c61a28;
     font-weight: 500;
   }
-
-  @media (min-width: 768px) {
-    margin-top: 25px;
-  }
 `;
 
 export const OrderBy = styled.div`
