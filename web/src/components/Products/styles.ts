@@ -24,8 +24,6 @@ export const OrderBy = styled.div`
   }
 `;
 
-export const Dropdown = styled.div``;
-
 export const Items = styled.ul`
   display: flex;
   align-items: flex-start;

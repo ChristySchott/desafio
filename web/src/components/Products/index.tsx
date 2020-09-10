@@ -1,9 +1,20 @@
 import React from 'react';
 
-import { Container, OrderBy, Dropdown, Items } from './styles';
+import { Container, OrderBy, Items } from './styles';
 import Product from './Product';
 
 import shirt from '../../assets/products/shirt-1.jpg';
+import Select from '../Select';
+
+interface OptionTypes {
+  value: string;
+  label: string;
+}
+
+const orderOptions: OptionTypes[] = [
+  { value: 'preço', label: 'Preço' },
+  { value: 'data', label: 'Data' },
+];
 
 const Products: React.FC = () => {
   return (
@@ -11,8 +22,13 @@ const Products: React.FC = () => {
       <h2>Sapatos</h2>
 
       <OrderBy>
-        <span>Ordernar por</span>
-        <Dropdown>Preço</Dropdown>
+        <span>Ordenar por</span>
+        <Select
+          name="orderBy"
+          placeholder="Preço"
+          options={orderOptions}
+          value="order"
+        />
       </OrderBy>
 
       <Items>
