@@ -1,6 +1,8 @@
 import React from 'react';
+import { BsGrid3X3GapFill } from 'react-icons/bs';
+import { RiLayout2Fill } from 'react-icons/ri';
 
-import { Container, OrderBy, Items } from './styles';
+import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
 import shirt from '../../assets/products/shirt-1.jpg';
@@ -21,15 +23,21 @@ const Products: React.FC = () => {
     <Container>
       <h2>Sapatos</h2>
 
-      <OrderBy>
-        <span>Ordenar por</span>
-        <Select
-          name="orderBy"
-          placeholder="Preço"
-          options={orderOptions}
-          value="order"
-        />
-      </OrderBy>
+      <Menu>
+        <View>
+          <BsGrid3X3GapFill size={20} color="#5dbcd2" />
+          <RiLayout2Fill size={24} />
+        </View>
+        <OrderBy>
+          <span>Ordenar por</span>
+          <Select
+            name="orderBy"
+            placeholder="Preço"
+            options={orderOptions}
+            value="order"
+          />
+        </OrderBy>
+      </Menu>
 
       <Items>
         <Product
