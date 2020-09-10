@@ -24,7 +24,7 @@ exports[`<Header /> should render with no error 1`] = `
     </div>
   </div>
   <div
-    class="sc-dlnjPT eBLiYO"
+    class="sc-dlnjPT eVOeIi"
   >
     <div
       class="sc-hKFyIo bkiLPl"
@@ -46,27 +46,6 @@ exports[`<Header /> should render with no error 1`] = `
                 href="/"
               >
                 Página inicial
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Camisetas
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Calças
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Sapatos
               </a>
             </li>
             <li>
@@ -125,7 +104,7 @@ exports[`<Header /> should render with no error 1`] = `
     </div>
   </div>
   <div
-    class="sc-eCApGN dVyjFc"
+    class="sc-eCApGN iNUrRj"
   >
     <ul>
       <li>
@@ -133,27 +112,6 @@ exports[`<Header /> should render with no error 1`] = `
           href="/"
         >
           Página inicial
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-        >
-          Camisetas
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-        >
-          Calças
-        </a>
-      </li>
-      <li>
-        <a
-          href="/"
-        >
-          Sapatos
         </a>
       </li>
       <li>

@@ -16,27 +16,6 @@ exports[`<Menu /> should render with no error 1`] = `
       <a
         href="/"
       >
-        Camisetas
-      </a>
-    </li>
-    <li>
-      <a
-        href="/"
-      >
-        Calças
-      </a>
-    </li>
-    <li>
-      <a
-        href="/"
-      >
-        Sapatos
-      </a>
-    </li>
-    <li>
-      <a
-        href="/"
-      >
         Contato
       </a>
     </li>
