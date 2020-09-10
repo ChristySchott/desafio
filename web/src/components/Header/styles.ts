@@ -19,7 +19,7 @@ export const Login = styled.div`
 
     @media (min-width: 768px) {
       justify-content: flex-end;
-      padding-right: 5px;
+      padding-right: 15px;
     }
 
     @media (min-width: 1048px) {
@@ -51,7 +51,11 @@ export const Content = styled.div`
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    padding: 20px;
+    padding: 20px 10px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 25px 0;
   }
 `;
 
@@ -76,9 +80,20 @@ export const NavWeb = styled.div`
   ul {
     padding: 0 15px;
     width: 100%;
+    max-width: 1048px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     list-style: none;
+
+    @media (min-width: 1024px) {
+      justify-content: flex-start;
+      padding: 0;
+
+      li + li {
+        margin-left: 30px;
+      }
+    }
 
     a {
       color: #fff;
