@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paginator /> should render with no error 1`] = `
+<section
+  class="sc-bdnylx cFSjuR"
+>
+  <a
+    class="sc-hKFyIo"
+  >
+    <svg
+      color="#5dbcd2"
+      fill="none"
+      height="20"
+      size="20"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      style="color: rgb(93, 188, 210);"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="15 18 9 12 15 6"
+      />
+    </svg>
+  </a>
+  <ul
+    class="sc-gtssRu kscDjb"
+  >
+    <a
+      class="sc-dlnjPT dJGKuS"
+    >
+      1
+    </a>
+  </ul>
+  <a
+    class="sc-hKFyIo"
+  >
+    <svg
+      color="#5dbcd2"
+      fill="none"
+      height="20"
+      size="20"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      style="color: rgb(93, 188, 210);"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <polyline
+        points="9 18 15 12 9 6"
+      />
+    </svg>
+  </a>
+</section>
+`;
