@@ -9,13 +9,23 @@ interface MenuProps {
 const Menu: React.FC<MenuProps> = ({ open }) => {
   return (
     <Container open={open}>
-      <div>
-        <a href="/">Página inicial</a>
-        <a href="/">Camisetas</a>
-        <a href="/">Calças</a>
-        <a href="/">Sapatos</a>
-        <a href="/">Contato</a>
-      </div>
+      <ul>
+        <li>
+          <a href="/">Página inicial</a>
+        </li>
+        <li>
+          <a href="/">Camisetas</a>
+        </li>
+        <li>
+          <a href="/">Calças</a>
+        </li>
+        <li>
+          <a href="/">Sapatos</a>
+        </li>
+        <li>
+          <a href="/">Contato</a>
+        </li>
+      </ul>
     </Container>
   );
 };

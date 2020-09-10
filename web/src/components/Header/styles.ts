@@ -49,9 +49,46 @@ export const Content = styled.div`
 
   max-width: 1048px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 20px;
+  }
 `;
 
-export const Nav = styled.div``;
+export const NavMobile = styled.div`
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavWeb = styled.div`
+  display: none;
+  width: 100%;
+  background: #c61a28;
+  padding: 15px 0;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  ul {
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    a {
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+`;
 
 export const Logo = styled.div`
   img {
@@ -59,4 +96,18 @@ export const Logo = styled.div`
   }
 `;
 
-export const Search = styled.div``;
+export const SearchIcon = styled.div`
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const SearchInput = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;

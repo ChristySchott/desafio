@@ -15,7 +15,6 @@ const Container = styled.button<ContainerProps>`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  transition: top 0.3s;
 
   ${({ open }) =>
     open &&
@@ -23,6 +22,7 @@ const Container = styled.button<ContainerProps>`
       position: absolute;
       top: 4%;
       left: 2.5rem;
+      transition: top 1s ease-out;
     `};
 
   &:focus {
@@ -32,9 +32,9 @@ const Container = styled.button<ContainerProps>`
   div {
     width: 2.5rem;
     height: 0.3rem;
-    background: ${({ open }) => (open ? '#fff' : '#000')};
+    background-color: ${({ open }) => (open ? '#fff' : '#000')};
     border-radius: 10px;
-    transition: all 0.3s linear;
+    transition: transform 0.3s linear;
     position: relative;
     transform-origin: 1px;
 

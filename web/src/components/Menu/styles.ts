@@ -24,7 +24,8 @@ const Container = styled.nav<ContainerProps>`
     width: 100%;
   }
 
-  div {
+  ul {
+    list-style: none;
     text-align: center;
   }
 
