@@ -7,6 +7,10 @@ export const Container = styled.li`
   @media (min-width: 768px) {
     width: 150px;
   }
+
+  @media (min-width: 1024px) {
+    width: 170px;
+  }
 `;
 
 export const Image = styled.div`
