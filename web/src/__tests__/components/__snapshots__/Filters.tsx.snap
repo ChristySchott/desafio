@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render the medium size by default 1`] = `
+<div
+  class="sc-bdnylx ciEIBG"
+>
+  <div
+    class="sc-gtssRu fwKGZo"
+  >
+    <p>
+      <a
+        href="/"
+      >
+        Página Inicial 
+      </a>
+      &gt;
+      <span>
+         Sapatos
+      </span>
+    </p>
+  </div>
+  <div
+    class="sc-dlnjPT OxSGq"
+  >
+    <h2>
+      Filtre por
+    </h2>
+    <h3>
+      Categorias
+    </h3>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Roupas
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Sapatos
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Acessórios
+        </a>
+      </li>
+    </ul>
+    <h3>
+      Cores
+    </h3>
+    <ul
+      class="sc-hKFyIo haoNPp"
+    >
+      <li>
+        <a
+          href="/"
+        />
+      </li>
+      <li>
+        <a
+          href="/"
+        />
+      </li>
+      <li>
+        <a
+          href="/"
+        />
+      </li>
+    </ul>
+    <h3>
+      Tipo
+    </h3>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Corrida
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Caminhada
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Casual
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Social
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<Filters /> should render with no error 1`] = `
+<div
+  class="sc-bdnylx ciEIBG"
+>
+  <div
+    class="sc-gtssRu fwKGZo"
+  >
+    <p>
+      <a
+        href="/"
+      >
+        Página Inicial 
+      </a>
+      &gt;
+      <span>
+         Sapatos
+      </span>
+    </p>
+  </div>
+  <div
+    class="sc-dlnjPT OxSGq"
+  >
+    <h2>
+      Filtre por
+    </h2>
+    <h3>
+      Categorias
+    </h3>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Roupas
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Sapatos
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Acessórios
+        </a>
+      </li>
+    </ul>
+    <h3>
+      Cores
+    </h3>
+    <ul
+      class="sc-hKFyIo haoNPp"
+    >
+      <li>
+        <a
+          href="/"
+        />
+      </li>
+      <li>
+        <a
+          href="/"
+        />
+      </li>
+      <li>
+        <a
+          href="/"
+        />
+      </li>
+    </ul>
+    <h3>
+      Tipo
+    </h3>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Corrida
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Caminhada
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Casual
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Social
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
