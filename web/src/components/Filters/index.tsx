@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 
-import { Container, Page, Menu } from './styles';
+import { Container, Page, Menu, Colors } from './styles';
 
 const Filters: React.FC = () => {
   return (
@@ -11,14 +11,14 @@ const Filters: React.FC = () => {
         <p>
           <a href="/">Página Inicial </a>
           &gt;
-          <span>Sapatos</span>
+          <span> Sapatos</span>
         </p>
       </Page>
 
       <Menu>
-        <h1>Filtre por</h1>
+        <h2>Filtre por</h2>
 
-        <h2>Categorias</h2>
+        <h3>Categorias</h3>
         <ul>
           <li>
             <a href="/">Roupas</a>
@@ -31,8 +31,8 @@ const Filters: React.FC = () => {
           </li>
         </ul>
 
-        <h2>Cores</h2>
-        <ul>
+        <h3>Cores</h3>
+        <Colors>
           <li>
             <a href="/" />
           </li>
@@ -42,9 +42,9 @@ const Filters: React.FC = () => {
           <li>
             <a href="/" />
           </li>
-        </ul>
+        </Colors>
 
-        <h2>Tipo</h2>
+        <h3>Tipo</h3>
         <ul>
           <li>
             <a href="/">Corrida</a>
