@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.li`
   margin-top: 25px;
@@ -10,6 +11,29 @@ export const Container = styled.li`
 
   @media (min-width: 1024px) {
     width: 170px;
+  }
+
+  button {
+    display: none;
+    width: 100%;
+    height: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    background-color: #5dbcd2;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: ${shade(0.2, '#5dbcd2')};
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;
 

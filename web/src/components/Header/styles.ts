@@ -47,7 +47,7 @@ export const Content = styled.div`
   justify-content: space-between;
   padding: 15px 20px;
 
-  max-width: 1048px;
+  max-width: 1000px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
@@ -56,6 +56,10 @@ export const Content = styled.div`
 
   @media (min-width: 1024px) {
     padding: 25px 0;
+  }
+
+  @media (min-width: 1060px) {
+    max-width: 1048px;
   }
 `;
 
@@ -75,6 +79,10 @@ export const NavWeb = styled.div`
 
   @media (min-width: 768px) {
     display: block;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 15px;
   }
 
   ul {

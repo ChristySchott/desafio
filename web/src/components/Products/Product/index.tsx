@@ -19,15 +19,19 @@ const Product: React.FC<ProductProps> = ({
 }) => {
   return (
     <Container>
-      <Image>
-        <img src={imageUrl} alt={alt} />
-      </Image>
+      <a href="/">
+        <Image>
+          <img src={imageUrl} alt={alt} />
+        </Image>
+      </a>
 
       <Infos>
         <span>{name}</span>
         {!!offer && <span>{offer}</span>}
         <strong>{price}</strong>
       </Infos>
+
+      <button type="button">Comprar</button>
     </Container>
   );
 };
