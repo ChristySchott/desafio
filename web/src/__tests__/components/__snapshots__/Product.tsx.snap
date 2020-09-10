@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Product /> should render with no error 1`] = `
+<li
+  class="sc-bdnylx eMevlY"
+>
+  <div
+    class="sc-gtssRu hQwYBx"
+  >
+    <img
+      alt=""
+      src=""
+    />
+  </div>
+  <div
+    class="sc-dlnjPT kMBBxv"
+  >
+    <span />
+    <strong />
+  </div>
+</li>
+`;
