@@ -34,8 +34,6 @@ const Header: React.FC = () => {
     loadCategories();
   }, []);
 
-  console.log(filter);
-
   return (
     <Container>
       <Login>
