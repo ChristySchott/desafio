@@ -103,7 +103,10 @@ export const NavWeb = styled.div`
       }
     }
 
+    button,
     a {
+      background: transparent;
+      border: none;
       color: #fff;
       font-size: 1.6rem;
       font-weight: 600;

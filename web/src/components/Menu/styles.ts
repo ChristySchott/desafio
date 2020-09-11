@@ -29,7 +29,10 @@ const Container = styled.nav<ContainerProps>`
     text-align: center;
   }
 
+  button,
   a {
+    background: transparent;
+    border: none;
     display: block;
     font-size: 2rem;
     text-transform: uppercase;
@@ -48,6 +51,13 @@ const Container = styled.nav<ContainerProps>`
     &:hover {
       color: #ddd;
     }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 `;
 

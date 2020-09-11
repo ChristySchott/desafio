@@ -17,10 +17,13 @@ import Burger from '../Burger';
 import Menu from '../Menu';
 import Input from '../Input';
 import api from '../../services/api';
+import { useFilter } from '../../hooks/filter';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [categories, setCategories] = useState([]);
+
+  const { setFilter, filter } = useFilter();
 
   useEffect(() => {
     async function loadCategories(): Promise<void> {
@@ -30,6 +33,8 @@ const Header: React.FC = () => {
 
     loadCategories();
   }, []);
+
+  console.log(filter);
 
   return (
     <Container>
@@ -75,7 +80,9 @@ const Header: React.FC = () => {
           {categories.length > 0 &&
             categories.map(({ name, path }) => (
               <li>
-                <a href={`/${path}`}>{name}</a>
+                <button type="button" onClick={() => setFilter(path)}>
+                  {name}
+                </button>
               </li>
             ))}
           <li>

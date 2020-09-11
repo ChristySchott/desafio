@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import Container from './styles';
 import api from '../../services/api';
+import { useFilter } from '../../hooks/filter';
 
 interface MenuProps {
   open: boolean;
@@ -9,6 +10,8 @@ interface MenuProps {
 
 const Menu: React.FC<MenuProps> = ({ open }) => {
   const [categories, setCategories] = useState([]);
+
+  const { setFilter } = useFilter();
 
   useEffect(() => {
     async function loadCategories(): Promise<void> {
@@ -27,8 +30,10 @@ const Menu: React.FC<MenuProps> = ({ open }) => {
         </li>
         {categories.length > 0 &&
           categories.map(({ name, path }) => (
-            <li>
-              <a href={`/${path}`}>{name}</a>
+            <li key={name}>
+              <button type="button" onClick={() => setFilter(path)}>
+                {name}
+              </button>
             </li>
           ))}
         <li>
