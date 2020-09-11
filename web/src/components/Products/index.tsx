@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
 
+import { useLocation } from 'react-router-dom';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
 import shirt from '../../assets/products/shirt-1.jpg';
 import Select from '../Select';
 import Paginator from '../Paginator';
+import api from '../../services/api';
 
 interface OptionTypes {
   value: string;
@@ -20,6 +22,18 @@ const orderOptions: OptionTypes[] = [
 ];
 
 const Products: React.FC = () => {
+  const location = useLocation();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function loadProducts(): Promise<void> {
+      const response = await api.get(`tenis`);
+      setProducts(response.data);
+    }
+
+    loadProducts();
+  }, [location]);
+
   return (
     <Container>
       <h2>Sapatos</h2>
@@ -41,31 +55,15 @@ const Products: React.FC = () => {
       </Menu>
 
       <Items>
-        <Product
-          imageUrl={shirt}
-          alt="Tênis azul da Adidas com cadarços rosas"
-          name="Tênis Adidas"
-          price="R$299,90"
-        />
-        <Product
-          imageUrl={shirt}
-          alt="Tênis azul da Adidas com cadarços rosas"
-          name="Tênis Adidas"
-          price="R$299,90"
-        />
-        <Product
-          imageUrl={shirt}
-          alt="Tênis azul da Adidas com cadarços rosas"
-          name="Tênis Adidas"
-          price="R$299,90"
-        />
-        <Product
-          imageUrl={shirt}
-          alt="Tênis azul da Adidas com cadarços rosas"
-          name="Tênis Adidas"
-          offer="R$499,00"
-          price="R$299,90"
-        />
+        {products &&
+          products.map(() => (
+            <Product
+              imageUrl={shirt}
+              alt="Tênis azul da Adidas com cadarços rosas"
+              name="Tênis Adidas"
+              price="R$299,90"
+            />
+          ))}
       </Items>
 
       <Paginator />
