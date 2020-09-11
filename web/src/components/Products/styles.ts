@@ -7,6 +7,7 @@ export const Container = styled.div`
   h2 {
     color: #c61a28;
     font-weight: 500;
+    text-transform: capitalize;
   }
 `;
 

@@ -35,5 +35,7 @@ export const Page = styled.div`
 
   span {
     color: #c61a28;
+    text-transform: capitalize;
+    margin-left: 4px;
   }
 `;

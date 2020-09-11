@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [categories, setCategories] = useState([]);
 
-  const { setFilter, filter } = useFilter();
+  const { setFilter } = useFilter();
 
   useEffect(() => {
     async function loadCategories(): Promise<void> {

@@ -4,8 +4,11 @@ import Filters from '../../components/Filters';
 
 import { Main, Page } from './styles';
 import Products from '../../components/Products';
+import { useFilter } from '../../hooks/filter';
 
 const Dashboard: React.FC = () => {
+  const { filter } = useFilter();
+
   return (
     <>
       <Header />
@@ -13,7 +16,13 @@ const Dashboard: React.FC = () => {
         <p>
           <a href="/">Página Inicial </a>
           &gt;
-          <span> Sapatos</span>
+          <span>
+            {filter === 'calcas'
+              ? 'Calças'
+              : filter === 'calcados'
+              ? 'Calçados'
+              : filter}
+          </span>
         </p>
       </Page>
       <Main>

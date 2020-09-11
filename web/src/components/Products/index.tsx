@@ -36,7 +36,13 @@ const Products: React.FC = () => {
 
   return (
     <Container>
-      <h2>Sapatos</h2>
+      <h2>
+        {filter === 'calcas'
+          ? 'Calças'
+          : filter === 'calcados'
+          ? 'Calçados'
+          : filter}
+      </h2>
 
       <Menu>
         <View>
