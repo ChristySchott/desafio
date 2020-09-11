@@ -90,3 +90,23 @@ export const Items = styled.ul`
 
   list-style: none;
 `;
+
+export const EmptyState = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-top: 100px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    color: #c61a28;
+  }
+`;

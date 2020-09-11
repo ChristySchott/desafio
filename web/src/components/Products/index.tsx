@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
+import { FiSearch } from 'react-icons/fi';
 
 import api from 'services/api';
 import { useCategory } from 'hooks/category';
@@ -10,11 +11,12 @@ import { useFilter } from 'hooks/filter';
 import { useColorFilter } from 'hooks/color';
 import TagFilter from 'components/TagFilter';
 import { ProductInterface } from 'hooks/cart';
-import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
 import Select from '../Select';
 import Paginator from '../Paginator';
+
+import { Container, View, Menu, OrderBy, Items, EmptyState } from './styles';
 
 interface OptionTypes {
   value: string;
@@ -92,7 +94,7 @@ const Products: React.FC = () => {
       </Menu>
 
       <Items>
-        {products &&
+        {products.length > 0 ? (
           products.map(product => (
             <Product
               key={product.id}
@@ -103,9 +105,14 @@ const Products: React.FC = () => {
               offer={product.specialPrice}
               item={product}
             />
-          ))}
+          ))
+        ) : (
+          <EmptyState>
+            <FiSearch size={50} color="#c61a28" />
+            <p>Oops! Não encontramos nenhum produto.</p>
+          </EmptyState>
+        )}
       </Items>
-
       <Paginator />
     </Container>
   );
