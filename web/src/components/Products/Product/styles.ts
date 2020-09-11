@@ -14,7 +14,6 @@ export const Container = styled.li`
   }
 
   button {
-    display: none;
     width: 100%;
     height: 35px;
     text-transform: uppercase;
