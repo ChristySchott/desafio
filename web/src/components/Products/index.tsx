@@ -93,14 +93,15 @@ const Products: React.FC = () => {
 
       <Items>
         {products &&
-          products.map(({ price, name, id, image, specialPrice }) => (
+          products.map(product => (
             <Product
-              key={id}
-              imageUrl={image}
+              key={product.id}
+              imageUrl={product.image}
               alt="Tênis azul da Adidas com cadarços rosas"
-              name={name}
-              price={price}
-              offer={specialPrice}
+              name={product.name}
+              price={product.price}
+              offer={product.specialPrice}
+              item={product}
             />
           ))}
       </Items>

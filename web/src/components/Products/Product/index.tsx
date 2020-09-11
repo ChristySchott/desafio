@@ -3,6 +3,7 @@
 import React from 'react';
 
 import formatValue from 'utils/formatValue';
+import { ProductInterface, useCart } from 'hooks/cart';
 import { Container, Image, Infos } from './styles';
 
 interface ProductProps {
@@ -11,6 +12,7 @@ interface ProductProps {
   name: string;
   offer?: number;
   price: number;
+  item: ProductInterface;
 }
 
 const Product: React.FC<ProductProps> = ({
@@ -19,7 +21,14 @@ const Product: React.FC<ProductProps> = ({
   name,
   offer,
   price,
+  item,
 }) => {
+  const { addToCart } = useCart();
+
+  function handleAddToCart(product: ProductInterface): void {
+    addToCart(product);
+  }
+
   return (
     <Container>
       <a href="/">
@@ -34,7 +43,9 @@ const Product: React.FC<ProductProps> = ({
         <strong>{formatValue(price)}</strong>
       </Infos>
 
-      <button type="button">Comprar</button>
+      <button type="button" onClick={() => handleAddToCart(item)}>
+        Comprar
+      </button>
     </Container>
   );
 };
