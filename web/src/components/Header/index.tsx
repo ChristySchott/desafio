@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import { BiSearch } from 'react-icons/bi';
 import logoImg from 'assets/logo.png';
 
-import api from 'services/api';
 import { useCategory } from 'hooks/category';
 import {
   Container,
@@ -21,18 +20,7 @@ import Input from '../Input';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
-  const [categories, setCategories] = useState([]);
-
-  const { setCategory } = useCategory();
-
-  useEffect(() => {
-    async function loadCategories(): Promise<void> {
-      const response = await api.get('list');
-      setCategories(response.data);
-    }
-
-    loadCategories();
-  }, []);
+  const { categoriesList, setCategory } = useCategory();
 
   return (
     <Container>
@@ -75,8 +63,8 @@ const Header: React.FC = () => {
           <li>
             <a href="/">Página inicial</a>
           </li>
-          {categories.length > 0 &&
-            categories.map(({ name, path }) => (
+          {categoriesList.length > 0 &&
+            categoriesList.map(({ name, path }) => (
               <li>
                 <button type="button" onClick={() => setCategory(path)}>
                   {name}
