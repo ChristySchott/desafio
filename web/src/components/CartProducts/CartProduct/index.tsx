@@ -5,20 +5,13 @@ import { FiMinus, FiPlus } from 'react-icons/fi';
 
 import formatValue from 'utils/formatValue';
 import { ProductInterface, useCart } from 'hooks/cart';
-import {
-  Container,
-  Image,
-  Infos,
-  ActionContainer,
-  TotalContainer,
-} from './styles';
+import { Container, Image, Infos, ActionContainer } from './styles';
 
 interface CartProductProps {
   productId: number;
   imageUrl: string;
   alt: string;
   name: string;
-  offer?: number;
   price: number;
   item: ProductInterface;
   quantity?: number;
@@ -29,7 +22,6 @@ const CartProduct: React.FC<CartProductProps> = ({
   productId,
   alt,
   name,
-  offer,
   price,
   item,
   quantity,
@@ -54,22 +46,21 @@ const CartProduct: React.FC<CartProductProps> = ({
 
       <Infos>
         <span>{name}</span>
-        {!!offer && <span>{formatValue(offer)}</span>}
-        <strong>{formatValue(price)}</strong>
+        <div>
+          <span>{`${quantity}x`}</span>
+
+          <span>
+            <strong>{formatValue(price * item.quantity)}</strong>
+          </span>
+        </div>
       </Infos>
-
-      <TotalContainer>
-        <span>{`${quantity}x`}</span>
-
-        <span>{formatValue(price * item.quantity)}</span>
-      </TotalContainer>
 
       <ActionContainer>
         <button type="button" onClick={() => handleIncrement(productId)}>
-          <FiPlus color="#E83F5B" size={16} />
+          <FiPlus color="#fff" size={16} />
         </button>
         <button type="button" onClick={() => handleDecrement(productId)}>
-          <FiMinus color="#E83F5B" size={16} />
+          <FiMinus color="#fff" size={16} />
         </button>
       </ActionContainer>
     </Container>

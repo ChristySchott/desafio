@@ -3,6 +3,7 @@ import Filters from 'components/Filters';
 
 import Products from 'components/Products';
 import { useCategory } from 'hooks/category';
+import CartInfos from 'components/CartInfos';
 import { Main, Page } from './styles';
 
 const Dashboard: React.FC = () => {
@@ -26,6 +27,7 @@ const Dashboard: React.FC = () => {
       <Main>
         <Filters />
         <Products />
+        <CartInfos />
       </Main>
     </>
   );

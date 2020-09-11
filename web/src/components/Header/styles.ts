@@ -103,8 +103,8 @@ export const NavWeb = styled.div`
       }
     }
 
-    button,
-    a {
+    a,
+    button {
       background: transparent;
       border: none;
       color: #fff;

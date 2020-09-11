@@ -6,6 +6,7 @@ export const Main = styled.div`
   flex-direction: column;
   max-width: 1048px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: 768px) {
     align-items: flex-start;
