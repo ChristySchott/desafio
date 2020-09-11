@@ -73,12 +73,12 @@ export const Colors = styled.ul`
   li {
     width: 50px;
     height: 20px;
-    background: #fa4115;
+    background: #c61a28;
     margin: 0 !important;
   }
 
   li:nth-child(2) {
-    background: #c61a28;
+    background: #ebdc10;
   }
 
   li:nth-child(3) {

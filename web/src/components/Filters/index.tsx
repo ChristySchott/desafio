@@ -3,10 +3,13 @@
 import React from 'react';
 
 import { useFilter } from 'hooks/filter';
+import { useColorFilter } from 'hooks/color';
 import { Container, Menu, Colors } from './styles';
 
 const Filters: React.FC = () => {
   const { setFilter } = useFilter();
+  const { setColorToFilter } = useColorFilter();
+
   return (
     <Container>
       <Menu>
@@ -28,13 +31,16 @@ const Filters: React.FC = () => {
         <h3>Cores</h3>
         <Colors>
           <li>
-            <a href="/" />
+            <button
+              type="button"
+              onClick={() => setColorToFilter('Vermelho')}
+            />
           </li>
           <li>
-            <a href="/" />
+            <button type="button" onClick={() => setColorToFilter('Amarelo')} />
           </li>
           <li>
-            <a href="/" />
+            <button type="button" onClick={() => setColorToFilter('Azul')} />
           </li>
         </Colors>
 
