@@ -61,7 +61,7 @@ const Header: React.FC = () => {
       <NavWeb>
         <ul>
           <li>
-            <a href="/">Página inicial</a>
+            <button type="button">Página inicial</button>
           </li>
           {categoriesList.length > 0 &&
             categoriesList.map(({ name, path }) => (
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
               </li>
             ))}
           <li>
-            <a href="/">Contato</a>
+            <button type="button">Contato</button>
           </li>
         </ul>
       </NavWeb>

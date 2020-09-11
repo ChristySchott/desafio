@@ -103,8 +103,7 @@ export const NavWeb = styled.div`
       }
     }
 
-    button,
-    a {
+    button {
       background: transparent;
       border: none;
       color: #fff;
@@ -112,6 +111,13 @@ export const NavWeb = styled.div`
       font-weight: 600;
       text-decoration: none;
       text-transform: uppercase;
+      transition: color 0.2s;
+
+      position: relative;
+
+      &:hover {
+        color: #5dbcd2;
+      }
     }
   }
 `;
