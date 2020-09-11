@@ -2,21 +2,30 @@
 
 exports[`<Product /> should render with no error 1`] = `
 <li
-  class="sc-bdnylx eMevlY"
+  class="sc-bdnylx dcpTIQ"
 >
-  <div
-    class="sc-gtssRu hQwYBx"
+  <a
+    href="/"
   >
-    <img
-      alt=""
-      src=""
-    />
-  </div>
+    <div
+      class="sc-gtssRu hQwYBx"
+    >
+      <img
+        alt=""
+        src=""
+      />
+    </div>
+  </a>
   <div
     class="sc-dlnjPT kMBBxv"
   >
     <span />
     <strong />
   </div>
+  <button
+    type="button"
+  >
+    Comprar
+  </button>
 </li>
 `;

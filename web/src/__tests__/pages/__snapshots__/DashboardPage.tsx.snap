@@ -38,7 +38,7 @@ exports[`Dashboard Page should render with no error 1`] = `
           <div />
         </button>
         <nav
-          class="sc-pNWxx icIQWM"
+          class="sc-pNWxx eiFkBv"
         >
           <ul>
             <li>
@@ -104,7 +104,7 @@ exports[`Dashboard Page should render with no error 1`] = `
     </div>
   </div>
   <div
-    class="sc-eCApGN iNUrRj"
+    class="sc-eCApGN ebGiId"
   >
     <ul>
       <li>

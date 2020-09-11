@@ -2,7 +2,7 @@
 
 exports[`<Menu /> should render with no error 1`] = `
 <nav
-  class="sc-bdnylx ebzUpE"
+  class="sc-bdnylx iaFUdb"
 >
   <ul>
     <li>
