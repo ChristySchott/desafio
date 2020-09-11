@@ -1,13 +1,16 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import React from 'react';
 
+import formatValue from 'utils/formatValue';
 import { Container, Image, Infos } from './styles';
 
 interface ProductProps {
   imageUrl: string;
   alt: string;
   name: string;
-  offer?: string;
-  price: string;
+  offer?: number;
+  price: number;
 }
 
 const Product: React.FC<ProductProps> = ({
@@ -21,14 +24,14 @@ const Product: React.FC<ProductProps> = ({
     <Container>
       <a href="/">
         <Image>
-          <img src={imageUrl} alt={alt} />
+          <img src={require('assets/products/shoes-6.jpg')} alt={alt} />
         </Image>
       </a>
 
       <Infos>
         <span>{name}</span>
-        {!!offer && <span>{offer}</span>}
-        <strong>{price}</strong>
+        {!!offer && <span>{formatValue(offer)}</span>}
+        <strong>{formatValue(price)}</strong>
       </Infos>
 
       <button type="button">Comprar</button>

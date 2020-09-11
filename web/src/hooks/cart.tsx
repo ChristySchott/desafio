@@ -6,7 +6,7 @@ import React, {
   useEffect,
 } from 'react';
 
-export interface Product {
+export interface ProductInterface {
   id: number;
   sku: string;
   path: string;
@@ -18,8 +18,8 @@ export interface Product {
 }
 
 interface CartContext {
-  products: Product[];
-  addToCart(item: Omit<Product, 'quantity'>): void;
+  products: ProductInterface[];
+  addToCart(item: Omit<ProductInterface, 'quantity'>): void;
   increment(id: string): void;
   decrement(id: string): void;
 }
@@ -27,7 +27,7 @@ interface CartContext {
 const CartContext = createContext<CartContext | null>(null);
 
 const CartProvider: React.FC = ({ children }) => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<ProductInterface[]>([]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {

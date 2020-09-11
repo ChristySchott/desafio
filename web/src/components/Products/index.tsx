@@ -4,12 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
 
-import shirt from 'assets/products/shirt-1.jpg';
 import api from 'services/api';
 import { useCategory } from 'hooks/category';
 import { useFilter } from 'hooks/filter';
 import { useColorFilter } from 'hooks/color';
 import TagFilter from 'components/TagFilter';
+import { ProductInterface } from 'hooks/cart';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
@@ -30,7 +30,7 @@ const Products: React.FC = () => {
   const { category } = useCategory();
   const { filter, setFilter } = useFilter();
   const { colorToFilter, setColorToFilter } = useColorFilter();
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<ProductInterface[]>([]);
 
   let filters = '';
   let filterByType = '';
@@ -93,13 +93,14 @@ const Products: React.FC = () => {
 
       <Items>
         {products &&
-          products.map((_, index) => (
+          products.map(({ price, name, id, image, specialPrice }) => (
             <Product
-              key={index}
-              imageUrl={shirt}
+              key={id}
+              imageUrl={image}
               alt="Tênis azul da Adidas com cadarços rosas"
-              name="Tênis Adidas"
-              price="R$299,90"
+              name={name}
+              price={price}
+              offer={specialPrice}
             />
           ))}
       </Items>
