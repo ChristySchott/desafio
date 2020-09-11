@@ -8,7 +8,7 @@ interface FilterContextData {
 const FilterContext = createContext<FilterContextData>({} as FilterContextData);
 
 const FilterProvider: React.FC = ({ children }) => {
-  const [filter, setFilter] = useState('calcados');
+  const [filter, setFilter] = useState('');
 
   return (
     <FilterContext.Provider

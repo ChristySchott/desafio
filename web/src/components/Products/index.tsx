@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
@@ -5,6 +7,7 @@ import { RiLayout2Fill } from 'react-icons/ri';
 import shirt from 'assets/products/shirt-1.jpg';
 import api from 'services/api';
 import { useCategory } from 'hooks/category';
+import { useFilter } from 'hooks/filter';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
@@ -23,16 +26,24 @@ const orderOptions: OptionTypes[] = [
 
 const Products: React.FC = () => {
   const { category } = useCategory();
+  const { filter } = useFilter();
   const [products, setProducts] = useState([]);
+
+  let filters = '';
+  useEffect(() => {
+    if (filter) {
+      filters = `?filter.type=${filter}`;
+    }
+  }, [filter]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
-      const response = await api.get(category);
+      const response = await api.get(`${category}${filters}`);
       setProducts(response.data);
     }
 
     loadProducts();
-  }, [category]);
+  }, [category, filter]);
 
   return (
     <Container>
@@ -62,8 +73,9 @@ const Products: React.FC = () => {
 
       <Items>
         {products &&
-          products.map(() => (
+          products.map((_, index) => (
             <Product
+              key={index}
               imageUrl={shirt}
               alt="Tênis azul da Adidas com cadarços rosas"
               name="Tênis Adidas"

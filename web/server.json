@@ -187,6 +187,29 @@
       "filter": {
         "type": "Corrida"
       }
+    },
+    {
+      "id": 10,
+      "sku": "sku-10",
+      "path": "calca-social",
+      "name": "Calça Social",
+      "image": "media/pants-1.jpg",
+      "price": 39.9,
+      "specialPrice": 29.9,
+      "filter": {
+        "type": "Social"
+      }
+    },
+    {
+      "id": 11,
+      "sku": "sku-11",
+      "path": "calca-feminina",
+      "name": "Calça Feminina",
+      "image": "media/pants-2.jpg",
+      "price": 24.15,
+      "filter": {
+        "type": "Social"
+      }
     }
   ],
   "calcados": [
@@ -299,7 +322,41 @@
       "image": "media/shoes-10.jpg",
       "price": 329.0,
       "filter": {
-        "color": "Azul"
+        "type": "Social"
+      }
+    },
+    {
+      "id": 41,
+      "sku": "sku-34",
+      "path": "tenis-corrida-gel",
+      "name": "Tênis Corrida Gel",
+      "image": "media/shoes-4.jpg",
+      "price": 352.0,
+      "filter": {
+        "type": "Casual"
+      }
+    },
+    {
+      "id": 42,
+      "sku": "sku-35",
+      "path": "tenis-slip",
+      "name": "Tênis Slip Azul",
+      "image": "media/shoes-5.jpg",
+      "price": 92.0,
+      "filter": {
+        "type": "Caminhada"
+      }
+    },
+    {
+      "id": 43,
+      "sku": "sku-36",
+      "path": "tenis-slip-preto",
+      "name": "Tênis Slip Preto",
+      "image": "media/shoes-6.jpg",
+      "price": 90.0,
+      "specialPrice": 50.9,
+      "filter": {
+        "type": "Corrida"
       }
     }
   ]
