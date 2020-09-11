@@ -25,7 +25,7 @@
       "image": "media/shirt-1.jpg",
       "price": 59.9,
       "filter": {
-        "color": "Preta"
+        "color": "Vermelho"
       }
     },
     {
@@ -36,29 +36,29 @@
       "image": "media/shirt-2.jpg",
       "price": 40.5,
       "filter": {
-        "color": "Laranja"
+        "color": "Azul"
       }
     },
     {
       "id": 3,
       "sku": "sku-3",
-      "path": "camiseta-amarela",
-      "name": "Camiseta Amarela",
+      "path": "camiseta-amarelo",
+      "name": "Camiseta Amarelo",
       "image": "media/shirt-3.jpg",
       "price": 61.49,
       "filter": {
-        "color": "Amarela"
+        "color": "Amarelo"
       }
     },
     {
       "id": 4,
       "sku": "sku-4",
-      "path": "camiseta-rosa",
-      "name": "Camiseta Rosa",
+      "path": "camiseta-Amarelo",
+      "name": "Camiseta Amarelo",
       "image": "media/shirt-4.jpg",
       "price": 52.0,
       "filter": {
-        "color": "Rosa"
+        "color": "Amarelo"
       }
     },
     {
@@ -69,7 +69,8 @@
       "image": "media/shirt-1.jpg",
       "price": 59.9,
       "filter": {
-        "type": "Caminhada"
+        "type": "Caminhada",
+        "color": "Amarelo"
       }
     },
     {
@@ -80,7 +81,8 @@
       "image": "media/shirt-2.jpg",
       "price": 40.5,
       "filter": {
-        "type": "Caminhada"
+        "type": "Caminhada",
+        "color": "Amarelo"
       }
     }
   ],
@@ -94,7 +96,8 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Casual"
+        "type": "Casual",
+        "color": "Azul"
       }
     },
     {
@@ -116,7 +119,8 @@
       "image": "media/pants-3.jpg",
       "price": 61.49,
       "filter": {
-        "type": "Social"
+        "type": "Social",
+        "color": "Amarelo"
       }
     },
     {
@@ -128,7 +132,8 @@
       "price": 70.0,
       "specialPrice": 58,
       "filter": {
-        "type": "Casual"
+        "type": "Casual",
+        "color": "Azul"
       }
     },
     {
@@ -139,7 +144,8 @@
       "image": "media/pants-5.jpg",
       "price": 70.0,
       "filter": {
-        "type": "Social"
+        "type": "Social",
+        "color": "Amarelo"
       }
     },
     {
@@ -151,7 +157,8 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Casual"
+        "type": "Casual",
+        "color": "Azul"
       }
     },
     {
@@ -197,7 +204,8 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Social"
+        "type": "Social",
+        "color": "Amarelo"
       }
     },
     {
@@ -208,7 +216,8 @@
       "image": "media/pants-2.jpg",
       "price": 24.15,
       "filter": {
-        "type": "Social"
+        "type": "Social",
+        "color": "Vermelho"
       }
     }
   ],
@@ -221,7 +230,7 @@
       "image": "media/shoes-1.jpg",
       "price": 129.9,
       "filter": {
-        "color": "Preta"
+        "color": "Vermelho"
       }
     },
     {
@@ -232,7 +241,7 @@
       "image": "media/shoes-2.jpg",
       "price": 140.5,
       "filter": {
-        "color": "Laranja"
+        "color": "Amarelo"
       }
     },
     {
@@ -243,7 +252,7 @@
       "image": "media/shoes-3.jpg",
       "price": 261.49,
       "filter": {
-        "color": "Amarela"
+        "color": "Amarelo"
       }
     },
     {
@@ -254,7 +263,7 @@
       "image": "media/shoes-4.jpg",
       "price": 352.0,
       "filter": {
-        "color": "Cinza"
+        "color": "Azul"
       }
     },
     {
@@ -283,23 +292,23 @@
     {
       "id": 37,
       "sku": "sku-37",
-      "path": "tenis-corrida-rosa",
-      "name": "Tênis Corrida - Rosa ",
+      "path": "tenis-corrida-Amarelo",
+      "name": "Tênis Corrida - Amarelo ",
       "image": "media/shoes-7.jpg",
       "price": 315.0,
       "filter": {
-        "color": "Rosa"
+        "color": "Amarelo"
       }
     },
     {
       "id": 38,
       "sku": "sku-38",
-      "path": "tenis-rosa",
-      "name": "Tênis Rosa Feminino",
+      "path": "tenis-Amarelo",
+      "name": "Tênis Amarelo Feminino",
       "image": "media/shoes-8.jpg",
       "price": 281.0,
       "filter": {
-        "color": "Rosa"
+        "color": "Amarelo"
       }
     },
     {
@@ -311,7 +320,7 @@
       "price": 198.0,
       "specialPrice": 180.9,
       "filter": {
-        "color": "Bege"
+        "color": "Amarelo"
       }
     },
     {
@@ -322,7 +331,8 @@
       "image": "media/shoes-10.jpg",
       "price": 329.0,
       "filter": {
-        "type": "Social"
+        "type": "Social",
+        "color": "Amarelo"
       }
     },
     {
@@ -333,7 +343,8 @@
       "image": "media/shoes-4.jpg",
       "price": 352.0,
       "filter": {
-        "type": "Casual"
+        "type": "Casual",
+        "color": "Azul"
       }
     },
     {
@@ -344,7 +355,8 @@
       "image": "media/shoes-5.jpg",
       "price": 92.0,
       "filter": {
-        "type": "Caminhada"
+        "type": "Caminhada",
+        "color": "Azul"
       }
     },
     {
@@ -356,7 +368,8 @@
       "price": 90.0,
       "specialPrice": 50.9,
       "filter": {
-        "type": "Corrida"
+        "type": "Corrida",
+        "color": "Amarelo"
       }
     }
   ]

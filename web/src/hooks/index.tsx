@@ -2,11 +2,14 @@ import React from 'react';
 
 import { FilterProvider } from './filter';
 import { CategoryProvider } from './category';
+import { ColorProvider } from './color';
 
 const AppProvider: React.FC = ({ children }) => {
   return (
     <CategoryProvider>
-      <FilterProvider>{children}</FilterProvider>
+      <FilterProvider>
+        <ColorProvider>{children}</ColorProvider>
+      </FilterProvider>
     </CategoryProvider>
   );
 };
