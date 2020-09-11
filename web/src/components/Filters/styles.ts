@@ -75,6 +75,11 @@ export const Colors = styled.ul`
     height: 20px;
     background: #c61a28;
     margin: 0 !important;
+
+    button {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   li:nth-child(2) {

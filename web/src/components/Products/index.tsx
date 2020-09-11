@@ -8,6 +8,7 @@ import shirt from 'assets/products/shirt-1.jpg';
 import api from 'services/api';
 import { useCategory } from 'hooks/category';
 import { useFilter } from 'hooks/filter';
+import { useColorFilter } from 'hooks/color';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
@@ -27,14 +28,21 @@ const orderOptions: OptionTypes[] = [
 const Products: React.FC = () => {
   const { category } = useCategory();
   const { filter } = useFilter();
+  const { colorToFilter } = useColorFilter();
   const [products, setProducts] = useState([]);
 
   let filters = '';
+  let filterByType = '';
   useEffect(() => {
     if (filter) {
-      filters = `?filter.type=${filter}`;
+      filters = `?&filter.type=${filter}`;
+      filterByType = `&filter.type=${filter}`;
     }
-  }, [filter]);
+
+    if (colorToFilter) {
+      filters = `?${filterByType}&filter.color=${colorToFilter}`;
+    }
+  }, [filter, colorToFilter]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
@@ -43,7 +51,7 @@ const Products: React.FC = () => {
     }
 
     loadProducts();
-  }, [category, filter]);
+  }, [category, filter, colorToFilter]);
 
   return (
     <Container>
