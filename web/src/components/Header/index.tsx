@@ -72,7 +72,7 @@ const Header: React.FC = () => {
               </li>
             ))}
           <li>
-            <button type="button">Contato</button>
+            <a href="/cart">Carrinho</a>
           </li>
         </ul>
       </NavWeb>

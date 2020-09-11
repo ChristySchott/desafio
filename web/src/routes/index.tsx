@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Dashboard from 'pages/Dashboard';
 import Cart from 'pages/Cart';
+import Header from 'components/Header';
 
 const Routes: React.FC = () => (
   <Router>
+    <Header />
     <Switch>
       <Route path="/" exact component={Dashboard} />
       <Route path="/cart" component={Cart} />
