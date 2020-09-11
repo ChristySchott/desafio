@@ -9,6 +9,7 @@ import api from 'services/api';
 import { useCategory } from 'hooks/category';
 import { useFilter } from 'hooks/filter';
 import { useColorFilter } from 'hooks/color';
+import TagFilter from 'components/TagFilter';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
@@ -55,13 +56,19 @@ const Products: React.FC = () => {
 
   return (
     <Container>
-      <h2>
-        {category === 'calcas'
-          ? 'Calças'
-          : category === 'calcados'
-          ? 'Calçados'
-          : category}
-      </h2>
+      <header>
+        <h2>
+          {category === 'calcas'
+            ? 'Calças'
+            : category === 'calcados'
+            ? 'Calçados'
+            : category}
+        </h2>
+        <div>
+          <TagFilter name="Corrida" />
+          <TagFilter name="Amarelo" />
+        </div>
+      </header>
 
       <Menu>
         <View>

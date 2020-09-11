@@ -4,10 +4,34 @@ export const Container = styled.div`
   width: 90%;
   margin: 0 auto;
 
+  header {
+    margin: 10px 0;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    > div {
+      margin-top: 10px;
+      display: flex;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+
+      > div {
+        margin-right: 10px;
+      }
+    }
+  }
+
   h2 {
     color: #c61a28;
     font-weight: 500;
     text-transform: capitalize;
+    margin-right: 10px;
   }
 `;
 

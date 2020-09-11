@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  border: 1px solid #2068c8;
-  border-radius: 15px;
-  padding: 10px 6px;
+  border: 1px solid #c61a28;
+  border-radius: 4px;
+  padding: 5px;
   height: 33px;
   display: flex;
   align-items: center;
-  margin-right: 5px;
-  margin-top: 8px;
-  padding-left: 12px;
+  padding-left: 7px;
+
+  @media (min-width: 768px) {
+  }
 `;
 
 export const Content = styled.div`
@@ -19,9 +20,12 @@ export const Content = styled.div`
   width: 100%;
 
   span {
-    font-weight: 500;
-    font-size: 16px;
-    color: #2068c8;
+    font-size: 1.4rem;
+    color: #c61a28;
+
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 
   button {

@@ -14,7 +14,7 @@ const TagFilter: React.FC<TagFilterProps> = ({ name, onRemove }) => (
     <Content>
       <span>{name}</span>
       <button type="button" onClick={onRemove}>
-        <FiX size={18} />
+        <FiX size={16} color="#c61a28" />
       </button>
     </Content>
   </Container>
