@@ -4,7 +4,7 @@ import { RiLayout2Fill } from 'react-icons/ri';
 
 import shirt from 'assets/products/shirt-1.jpg';
 import api from 'services/api';
-import { useFilter } from 'hooks/filter';
+import { useCategory } from 'hooks/category';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
@@ -22,26 +22,26 @@ const orderOptions: OptionTypes[] = [
 ];
 
 const Products: React.FC = () => {
-  const { filter } = useFilter();
+  const { category } = useCategory();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
-      const response = await api.get(filter);
+      const response = await api.get(category);
       setProducts(response.data);
     }
 
     loadProducts();
-  }, [filter]);
+  }, [category]);
 
   return (
     <Container>
       <h2>
-        {filter === 'calcas'
+        {category === 'calcas'
           ? 'Calças'
-          : filter === 'calcados'
+          : category === 'calcados'
           ? 'Calçados'
-          : filter}
+          : category}
       </h2>
 
       <Menu>

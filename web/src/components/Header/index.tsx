@@ -4,7 +4,7 @@ import { BiSearch } from 'react-icons/bi';
 import logoImg from 'assets/logo.png';
 
 import api from 'services/api';
-import { useFilter } from 'hooks/filter';
+import { useCategory } from 'hooks/category';
 import {
   Container,
   Login,
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [categories, setCategories] = useState([]);
 
-  const { setFilter } = useFilter();
+  const { setCategory } = useCategory();
 
   useEffect(() => {
     async function loadCategories(): Promise<void> {
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
           {categories.length > 0 &&
             categories.map(({ name, path }) => (
               <li>
-                <button type="button" onClick={() => setFilter(path)}>
+                <button type="button" onClick={() => setCategory(path)}>
                   {name}
                 </button>
               </li>
