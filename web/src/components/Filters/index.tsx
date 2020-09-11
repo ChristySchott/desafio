@@ -2,9 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 
+import { useFilter } from 'hooks/filter';
 import { Container, Menu, Colors } from './styles';
 
 const Filters: React.FC = () => {
+  const { setFilter } = useFilter();
   return (
     <Container>
       <Menu>
@@ -39,16 +41,24 @@ const Filters: React.FC = () => {
         <h3>Tipo</h3>
         <ul>
           <li>
-            <a href="/">Corrida</a>
+            <button type="button" onClick={() => setFilter('Corrida')}>
+              Corrida
+            </button>
           </li>
           <li>
-            <a href="/">Caminhada</a>
+            <button type="button" onClick={() => setFilter('Caminhada')}>
+              Caminhada
+            </button>
           </li>
           <li>
-            <a href="/">Casual</a>
+            <button type="button" onClick={() => setFilter('Casual')}>
+              Casual
+            </button>
           </li>
           <li>
-            <a href="/">Social</a>
+            <button type="button" onClick={() => setFilter('Social')}>
+              Social
+            </button>
           </li>
         </ul>
       </Menu>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Container = styled.div`
   width: 290px;
@@ -41,6 +42,17 @@ export const Menu = styled.div`
 
     a {
       color: #888;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      color: #888;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: ${shade(0.4, '#888')};
+      }
     }
 
     li + li {
