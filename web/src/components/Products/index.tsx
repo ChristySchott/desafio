@@ -28,8 +28,8 @@ const orderOptions: OptionTypes[] = [
 
 const Products: React.FC = () => {
   const { category } = useCategory();
-  const { filter } = useFilter();
-  const { colorToFilter } = useColorFilter();
+  const { filter, setFilter } = useFilter();
+  const { colorToFilter, setColorToFilter } = useColorFilter();
   const [products, setProducts] = useState([]);
 
   let filters = '';
@@ -65,8 +65,13 @@ const Products: React.FC = () => {
             : category}
         </h2>
         <div>
-          <TagFilter name="Corrida" />
-          <TagFilter name="Amarelo" />
+          {filter && <TagFilter name={filter} onRemove={() => setFilter('')} />}
+          {colorToFilter && (
+            <TagFilter
+              name={colorToFilter}
+              onRemove={() => setColorToFilter('')}
+            />
+          )}
         </div>
       </header>
 
