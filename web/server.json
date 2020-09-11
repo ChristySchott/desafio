@@ -69,7 +69,7 @@
       "image": "media/shirt-1.jpg",
       "price": 59.9,
       "filter": {
-        "tipo": "Caminhada"
+        "type": "Caminhada"
       }
     },
     {
@@ -80,7 +80,7 @@
       "image": "media/shirt-2.jpg",
       "price": 40.5,
       "filter": {
-        "tipo": "Caminhada"
+        "type": "Caminhada"
       }
     }
   ],
@@ -94,7 +94,7 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "tipo": "Casual"
+        "type": "Casual"
       }
     },
     {
@@ -105,7 +105,7 @@
       "image": "media/pants-2.jpg",
       "price": 24.15,
       "filter": {
-        "tipo": "Corrida"
+        "type": "Corrida"
       }
     },
     {
@@ -116,7 +116,7 @@
       "image": "media/pants-3.jpg",
       "price": 61.49,
       "filter": {
-        "tipo": "Social"
+        "type": "Social"
       }
     },
     {
@@ -128,7 +128,7 @@
       "price": 70.0,
       "specialPrice": 58,
       "filter": {
-        "tipo": "Casual"
+        "type": "Casual"
       }
     },
     {
@@ -139,7 +139,7 @@
       "image": "media/pants-5.jpg",
       "price": 70.0,
       "filter": {
-        "tipo": "Social"
+        "type": "Social"
       }
     },
     {
@@ -151,7 +151,7 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "tipo": "Casual"
+        "type": "Casual"
       }
     },
     {
@@ -162,7 +162,7 @@
       "image": "media/pants-2.jpg",
       "price": 24.15,
       "filter": {
-        "tipo": "Corrida"
+        "type": "Corrida"
       }
     },
     {
@@ -174,7 +174,7 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "tipo": "Corrida"
+        "type": "Corrida"
       }
     },
     {
@@ -185,7 +185,7 @@
       "image": "media/pants-2.jpg",
       "price": 24.15,
       "filter": {
-        "tipo": "Corrida"
+        "type": "Corrida"
       }
     }
   ],
