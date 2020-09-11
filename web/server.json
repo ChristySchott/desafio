@@ -60,6 +60,28 @@
       "filter": {
         "color": "Rosa"
       }
+    },
+    {
+      "id": 1,
+      "sku": "sku-1",
+      "path": "camiseta-preta",
+      "name": "Camiseta Preta",
+      "image": "media/shirt-1.jpg",
+      "price": 59.9,
+      "filter": {
+        "tipo": "Caminhada"
+      }
+    },
+    {
+      "id": 2,
+      "sku": "sku-2",
+      "path": "camiseta-laranja",
+      "name": "Camiseta Laranja",
+      "image": "media/shirt-2.jpg",
+      "price": 40.5,
+      "filter": {
+        "tipo": "Caminhada"
+      }
     }
   ],
   "calcas": [
@@ -72,7 +94,7 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "gender": "Masculina"
+        "tipo": "Casual"
       }
     },
     {
@@ -83,7 +105,7 @@
       "image": "media/pants-2.jpg",
       "price": 24.15,
       "filter": {
-        "gender": "Feminina"
+        "tipo": "Corrida"
       }
     },
     {
@@ -94,7 +116,7 @@
       "image": "media/pants-3.jpg",
       "price": 61.49,
       "filter": {
-        "gender": "Feminina"
+        "tipo": "Social"
       }
     },
     {
@@ -106,7 +128,7 @@
       "price": 70.0,
       "specialPrice": 58,
       "filter": {
-        "gender": "Masculina"
+        "tipo": "Casual"
       }
     },
     {
@@ -117,7 +139,53 @@
       "image": "media/pants-5.jpg",
       "price": 70.0,
       "filter": {
-        "gender": "Feminina"
+        "tipo": "Social"
+      }
+    },
+    {
+      "id": 15,
+      "sku": "sku-10",
+      "path": "calca-social",
+      "name": "Calça Social",
+      "image": "media/pants-1.jpg",
+      "price": 39.9,
+      "specialPrice": 29.9,
+      "filter": {
+        "tipo": "Casual"
+      }
+    },
+    {
+      "id": 16,
+      "sku": "sku-11",
+      "path": "calca-feminina",
+      "name": "Calça Feminina",
+      "image": "media/pants-2.jpg",
+      "price": 24.15,
+      "filter": {
+        "tipo": "Corrida"
+      }
+    },
+    {
+      "id": 17,
+      "sku": "sku-10",
+      "path": "calca-social",
+      "name": "Calça Social",
+      "image": "media/pants-1.jpg",
+      "price": 39.9,
+      "specialPrice": 29.9,
+      "filter": {
+        "tipo": "Corrida"
+      }
+    },
+    {
+      "id": 18,
+      "sku": "sku-11",
+      "path": "calca-feminina",
+      "name": "Calça Feminina",
+      "image": "media/pants-2.jpg",
+      "price": 24.15,
+      "filter": {
+        "tipo": "Corrida"
       }
     }
   ],
