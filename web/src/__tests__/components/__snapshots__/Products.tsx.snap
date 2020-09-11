@@ -2,11 +2,9 @@
 
 exports[`<Products /> should render with no error 1`] = `
 <div
-  class="sc-bdnylx cminll"
+  class="sc-bdnylx cLqkXa"
 >
-  <h2>
-    Sapatos
-  </h2>
+  <h2 />
   <div
     class="sc-gtssRu fxVHSD"
   >
