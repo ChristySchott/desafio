@@ -2,14 +2,17 @@
 
 exports[`<Products /> should render with no error 1`] = `
 <div
-  class="sc-bdnylx cLqkXa"
+  class="sc-dlnjPT jSNaY"
 >
-  <h2 />
+  <header>
+    <h2 />
+    <div />
+  </header>
   <div
-    class="sc-gtssRu fxVHSD"
+    class="sc-hKFyIo jTwLth"
   >
     <div
-      class="sc-hKFyIo MkPwY"
+      class="sc-jSFkmK kqPrbU"
     >
       <svg
         color="#5dbcd2"
@@ -49,16 +52,16 @@ exports[`<Products /> should render with no error 1`] = `
       </svg>
     </div>
     <div
-      class="sc-dlnjPT dKDLsq"
+      class="sc-eCApGN icuEVs"
     >
       <span>
         Ordenar por
       </span>
       <div
-        class="sc-fujyUd juHfBF"
+        class="sc-jrsJCI kSYIkP"
       >
         <section
-          class="sc-pNWxx keRQH"
+          class="sc-kEqYlL kVzphA"
         >
           <div
             class=" css-2b097c-container"
@@ -119,13 +122,13 @@ exports[`<Products /> should render with no error 1`] = `
     </div>
   </div>
   <ul
-    class="sc-eCApGN dHPBBU"
+    class="sc-gKAblj iNLcsL"
   />
   <section
-    class="sc-jrsJCI fpaSvH"
+    class="sc-iqAbSa goUTzd"
   >
     <a
-      class="sc-crzoUp"
+      class="sc-bqGHjH"
     >
       <svg
         color="#5dbcd2"
@@ -147,16 +150,16 @@ exports[`<Products /> should render with no error 1`] = `
       </svg>
     </a>
     <ul
-      class="sc-kEqYlL dMpxnJ"
+      class="sc-crzoUp kA-dAHC"
     >
       <a
-        class="sc-iqAbSa itmfyT"
+        class="sc-dIsAE fLQdRc"
       >
         1
       </a>
     </ul>
     <a
-      class="sc-crzoUp"
+      class="sc-bqGHjH"
     >
       <svg
         color="#5dbcd2"

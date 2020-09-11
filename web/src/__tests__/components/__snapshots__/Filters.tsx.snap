@@ -5,7 +5,7 @@ exports[`<Filters /> should render with no error 1`] = `
   class="sc-bdnylx bcOrZQ"
 >
   <div
-    class="sc-gtssRu jQOmBW"
+    class="sc-gtssRu fPRKtj"
   >
     <h2>
       Filtre por
@@ -40,21 +40,21 @@ exports[`<Filters /> should render with no error 1`] = `
       Cores
     </h3>
     <ul
-      class="sc-dlnjPT iRkRgz"
+      class="sc-dlnjPT fGujzH"
     >
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         />
       </li>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         />
       </li>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         />
       </li>
     </ul>
@@ -63,32 +63,32 @@ exports[`<Filters /> should render with no error 1`] = `
     </h3>
     <ul>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         >
           Corrida
-        </a>
+        </button>
       </li>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         >
           Caminhada
-        </a>
+        </button>
       </li>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         >
           Casual
-        </a>
+        </button>
       </li>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         >
           Social
-        </a>
+        </button>
       </li>
     </ul>
   </div>

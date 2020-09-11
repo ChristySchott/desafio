@@ -104,22 +104,22 @@ exports[`<Header /> should render with no error 1`] = `
     </div>
   </div>
   <div
-    class="sc-eCApGN ebGiId"
+    class="sc-eCApGN hrzgCt"
   >
     <ul>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         >
           Página inicial
-        </a>
+        </button>
       </li>
       <li>
-        <a
-          href="/"
+        <button
+          type="button"
         >
           Contato
-        </a>
+        </button>
       </li>
     </ul>
   </div>

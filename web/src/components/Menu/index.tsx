@@ -16,7 +16,7 @@ const Menu: React.FC<MenuProps> = ({ open }) => {
         <li>
           <a href="/">Página inicial</a>
         </li>
-        {categoriesList.length > 0 &&
+        {categoriesList &&
           categoriesList.map(({ name, path }) => (
             <li key={name}>
               <button type="button" onClick={() => setCategory(path)}>

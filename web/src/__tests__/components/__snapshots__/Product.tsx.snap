@@ -12,7 +12,7 @@ exports[`<Product /> should render with no error 1`] = `
     >
       <img
         alt=""
-        src=""
+        src="shoes-6.jpg"
       />
     </div>
   </a>
@@ -20,7 +20,9 @@ exports[`<Product /> should render with no error 1`] = `
     class="sc-dlnjPT kMBBxv"
   >
     <span />
-    <strong />
+    <strong>
+      R$2.00
+    </strong>
   </div>
   <button
     type="button"

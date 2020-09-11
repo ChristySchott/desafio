@@ -12,7 +12,7 @@ interface ProductProps {
   name: string;
   offer?: number;
   price: number;
-  item: ProductInterface;
+  item?: ProductInterface;
 }
 
 const Product: React.FC<ProductProps> = ({

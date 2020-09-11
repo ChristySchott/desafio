@@ -63,7 +63,7 @@ const Header: React.FC = () => {
           <li>
             <button type="button">Página inicial</button>
           </li>
-          {categoriesList.length > 0 &&
+          {categoriesList &&
             categoriesList.map(({ name, path }) => (
               <li key={name}>
                 <button type="button" onClick={() => setCategory(path)}>

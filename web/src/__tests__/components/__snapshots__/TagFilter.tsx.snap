@@ -2,25 +2,27 @@
 
 exports[`<TagFilter /> should render with no error 1`] = `
 <div
-  class="sc-bdnylx kgGxPL"
+  class="sc-bdnylx dKgNlo"
 >
   <div
-    class="sc-gtssRu cJQNRt"
+    class="sc-gtssRu fCOXwX"
   >
     <span />
     <button
       type="button"
     >
       <svg
+        color="#c61a28"
         fill="none"
-        height="18"
-        size="18"
+        height="16"
+        size="16"
         stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
+        style="color: rgb(198, 26, 40);"
         viewBox="0 0 24 24"
-        width="18"
+        width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
         <line

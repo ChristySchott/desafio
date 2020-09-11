@@ -1,15 +1,15 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 
-import { CartProvider } from 'hooks/cart';
-import Product from '../../components/Products/Product';
+import Cart from '../../pages/Cart';
 
-describe('<Product />', () => {
+describe('Cart Page', () => {
   it('should render with no error', () => {
     const { container } = render(
-      <CartProvider>
-        <Product imageUrl="" alt="" name="" price={2} />
-      </CartProvider>,
+      <BrowserRouter>
+        <Cart />
+      </BrowserRouter>,
     );
 
     expect(container).toBeTruthy();
