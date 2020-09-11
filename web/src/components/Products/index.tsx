@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
 
-import { useLocation } from 'react-router-dom';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
@@ -10,6 +9,7 @@ import shirt from '../../assets/products/shirt-1.jpg';
 import Select from '../Select';
 import Paginator from '../Paginator';
 import api from '../../services/api';
+import { useFilter } from '../../hooks/filter';
 
 interface OptionTypes {
   value: string;
@@ -22,17 +22,17 @@ const orderOptions: OptionTypes[] = [
 ];
 
 const Products: React.FC = () => {
-  const location = useLocation();
+  const { filter } = useFilter();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
-      const response = await api.get(`tenis`);
+      const response = await api.get(filter);
       setProducts(response.data);
     }
 
     loadProducts();
-  }, [location]);
+  }, [filter]);
 
   return (
     <Container>
