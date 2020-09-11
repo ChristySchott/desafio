@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import { BiSearch } from 'react-icons/bi';
-import logoImg from '../../assets/logo.png';
+import logoImg from 'assets/logo.png';
 
+import api from 'services/api';
+import { useFilter } from 'hooks/filter';
 import {
   Container,
   Login,
@@ -16,8 +18,6 @@ import {
 import Burger from '../Burger';
 import Menu from '../Menu';
 import Input from '../Input';
-import api from '../../services/api';
-import { useFilter } from '../../hooks/filter';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);

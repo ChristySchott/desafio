@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
 
+import shirt from 'assets/products/shirt-1.jpg';
+import api from 'services/api';
+import { useFilter } from 'hooks/filter';
 import { Container, View, Menu, OrderBy, Items } from './styles';
 import Product from './Product';
 
-import shirt from '../../assets/products/shirt-1.jpg';
 import Select from '../Select';
 import Paginator from '../Paginator';
-import api from '../../services/api';
-import { useFilter } from '../../hooks/filter';
 
 interface OptionTypes {
   value: string;

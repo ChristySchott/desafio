@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Filters from '../../components/Filters';
+import Header from 'components/Header';
+import Filters from 'components/Filters';
 
+import Products from 'components/Products';
+import { useFilter } from 'hooks/filter';
 import { Main, Page } from './styles';
-import Products from '../../components/Products';
-import { useFilter } from '../../hooks/filter';
 
 const Dashboard: React.FC = () => {
   const { filter } = useFilter();
