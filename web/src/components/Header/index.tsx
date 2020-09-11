@@ -4,7 +4,7 @@ import { BiSearch } from 'react-icons/bi';
 import logoImg from 'assets/logo.png';
 
 import { useCategory } from 'hooks/category';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import {
   Container,
   Login,
@@ -68,9 +68,7 @@ const Header: React.FC = () => {
       <NavWeb>
         <ul>
           <li>
-            <a href="/" type="button">
-              Página inicial
-            </a>
+            <Link to="/">Página inicial</Link>
           </li>
           {categoriesList &&
             categoriesList.map(({ name, path }) => (
@@ -82,7 +80,7 @@ const Header: React.FC = () => {
               </li>
             ))}
           <li>
-            <a href="/cart">Carrinho</a>
+            <Link to="/cart">Carrinho</Link>
           </li>
         </ul>
       </NavWeb>
