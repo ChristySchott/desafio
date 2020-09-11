@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TagFilter /> should render with no error 1`] = `
+<div
+  class="sc-bdnylx kgGxPL"
+>
+  <div
+    class="sc-gtssRu cJQNRt"
+  >
+    <span />
+    <button
+      type="button"
+    >
+      <svg
+        fill="none"
+        height="18"
+        size="18"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="18"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="18"
+          x2="6"
+          y1="6"
+          y2="18"
+        />
+        <line
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
