@@ -20,8 +20,8 @@ export interface ProductInterface {
 interface CartContext {
   products: ProductInterface[];
   addToCart(item: Omit<ProductInterface, 'quantity'>): void;
-  increment(id: string): void;
-  decrement(id: string): void;
+  increment(id: number): void;
+  decrement(id: number): void;
 }
 
 const CartContext = createContext<CartContext | null>(null);

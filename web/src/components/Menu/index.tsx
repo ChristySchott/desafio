@@ -25,7 +25,7 @@ const Menu: React.FC<MenuProps> = ({ open }) => {
             </li>
           ))}
         <li>
-          <a href="/">Contato</a>
+          <a href="/cart">Carrinho</a>
         </li>
       </ul>
     </Container>
