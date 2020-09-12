@@ -71,11 +71,11 @@ const Footer: React.FC = () => (
           <ContactSocialMedias>
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/christarget='_blank' hrefpher-hauschild-a091871a4/"
+              href="https://www.linkedin.com/company/webjump/?originalSubdomain=pt"
             >
               <AiFillLinkedin size={30} color="#222" />
             </a>
-            <a target="_blank" href="https://github.com/ChristopherHauschild">
+            <a target="_blank" href="https://twitter.com/_webjump">
               <AiFillTwitterCircle size={30} color="#222" />
             </a>
           </ContactSocialMedias>
