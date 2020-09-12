@@ -14,9 +14,30 @@ exports[`<Menu /> should render with no error 1`] = `
     </li>
     <li>
       <a
-        href="/"
+        href="/categories/camisetas"
       >
-        Contato
+        Camisetas
+      </a>
+    </li>
+    <li>
+      <a
+        href="/categories/calcas"
+      >
+        Calças
+      </a>
+    </li>
+    <li>
+      <a
+        href="/categories/calcados"
+      >
+        Calçados
+      </a>
+    </li>
+    <li>
+      <a
+        href="/cart"
+      >
+        Carrinho
       </a>
     </li>
   </ul>

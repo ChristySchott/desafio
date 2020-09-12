@@ -1,12 +1,12 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { RiLayout2Fill } from 'react-icons/ri';
 import { FiSearch } from 'react-icons/fi';
 
 import api from 'services/api';
-import { useCategory } from 'hooks/category';
 import { useFilter } from 'hooks/filter';
 import { useColorFilter } from 'hooks/color';
 import TagFilter from 'components/TagFilter';
@@ -17,6 +17,10 @@ import Select from '../Select';
 import Paginator from '../Paginator';
 
 import { Container, View, Menu, OrderBy, Items, EmptyState } from './styles';
+
+interface CategoryParams {
+  category: string;
+}
 
 interface OptionTypes {
   value: string;
@@ -29,7 +33,7 @@ const orderOptions: OptionTypes[] = [
 ];
 
 const Products: React.FC = () => {
-  const { category } = useCategory();
+  const { params } = useRouteMatch<CategoryParams>();
   const { filter, setFilter } = useFilter();
   const { colorToFilter, setColorToFilter } = useColorFilter();
   const [products, setProducts] = useState<ProductInterface[]>([]);
@@ -37,6 +41,8 @@ const Products: React.FC = () => {
   let filters = '';
   let filterByType = '';
   useEffect(() => {
+    filters = '';
+
     if (filter) {
       filters = `?&filter.type=${filter}`;
       filterByType = `&filter.type=${filter}`;
@@ -49,23 +55,16 @@ const Products: React.FC = () => {
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
-      const response = await api.get(`${category}${filters}`);
+      const response = await api.get(`/${params.category}${filters}`);
       setProducts(response.data);
     }
-
     loadProducts();
-  }, [category, filter, colorToFilter]);
+  }, [params.category, filter, colorToFilter]);
 
   return (
     <Container>
       <header>
-        <h2>
-          {category === 'calcas'
-            ? 'Calças'
-            : category === 'calcados'
-            ? 'Calçados'
-            : category}
-        </h2>
+        <h2>Oi</h2>
         <div>
           {filter && <TagFilter name={filter} onRemove={() => setFilter('')} />}
           {colorToFilter && (

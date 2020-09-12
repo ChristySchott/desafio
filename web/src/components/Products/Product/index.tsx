@@ -15,14 +15,7 @@ interface ProductProps {
   item: ProductInterface;
 }
 
-const Product: React.FC<ProductProps> = ({
-  imageUrl,
-  alt,
-  name,
-  offer,
-  price,
-  item,
-}) => {
+const Product: React.FC<ProductProps> = ({ alt, name, offer, price, item }) => {
   const { addToCart } = useCart();
 
   function handleAddToCart(product: ProductInterface): void {

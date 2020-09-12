@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { useCategory } from 'hooks/category';
 import { Link } from 'react-router-dom';
 import Container from './styles';
 
@@ -9,22 +8,21 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ open }) => {
-  const { categoriesList, setCategory } = useCategory();
-
   return (
     <Container open={open}>
       <ul>
         <li>
           <Link to="/">Página inicial</Link>
         </li>
-        {categoriesList &&
-          categoriesList.map(({ name, path }) => (
-            <li key={name}>
-              <button type="button" onClick={() => setCategory(path)}>
-                {name}
-              </button>
-            </li>
-          ))}
+        <li>
+          <Link to="/categories/camisetas">Camisetas</Link>
+        </li>
+        <li>
+          <Link to="/categories/calcas">Calças</Link>
+        </li>
+        <li>
+          <Link to="/categories/calcados">Calçados</Link>
+        </li>
         <li>
           <Link to="cart">Carrinho</Link>
         </li>

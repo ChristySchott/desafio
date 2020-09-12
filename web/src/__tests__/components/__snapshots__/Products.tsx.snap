@@ -2,17 +2,19 @@
 
 exports[`<Products /> should render with no error 1`] = `
 <div
-  class="sc-dlnjPT jSNaY"
+  class="sc-kEqYlL hQzvMe"
 >
   <header>
-    <h2 />
+    <h2>
+      Oi
+    </h2>
     <div />
   </header>
   <div
-    class="sc-hKFyIo jTwLth"
+    class="sc-iqAbSa fDElvS"
   >
     <div
-      class="sc-jSFkmK kqPrbU"
+      class="sc-dIsAE fPMEPg"
     >
       <svg
         color="#5dbcd2"
@@ -52,16 +54,16 @@ exports[`<Products /> should render with no error 1`] = `
       </svg>
     </div>
     <div
-      class="sc-eCApGN icuEVs"
+      class="sc-crzoUp kBxbcP"
     >
       <span>
         Ordenar por
       </span>
       <div
-        class="sc-jrsJCI kSYIkP"
+        class="sc-jSFkmK dTgRnu"
       >
         <section
-          class="sc-kEqYlL kVzphA"
+          class="sc-gKAblj iAVQIr"
         >
           <div
             class=" css-2b097c-container"
@@ -122,13 +124,47 @@ exports[`<Products /> should render with no error 1`] = `
     </div>
   </div>
   <ul
-    class="sc-gKAblj iNLcsL"
-  />
+    class="sc-bqGHjH gaFTWQ"
+  >
+    <div
+      class="sc-ksluoS edsndP"
+    >
+      <svg
+        color="#c61a28"
+        fill="none"
+        height="50"
+        size="50"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        style="color: rgb(198, 26, 40);"
+        viewBox="0 0 24 24"
+        width="50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="11"
+          cy="11"
+          r="8"
+        />
+        <line
+          x1="21"
+          x2="16.65"
+          y1="21"
+          y2="16.65"
+        />
+      </svg>
+      <p>
+        Oops! Não encontramos nenhum produto.
+      </p>
+    </div>
+  </ul>
   <section
-    class="sc-iqAbSa goUTzd"
+    class="sc-iCoHVE cEehsy"
   >
     <a
-      class="sc-bqGHjH"
+      class="sc-jrsJCI"
     >
       <svg
         color="#5dbcd2"
@@ -150,16 +186,16 @@ exports[`<Products /> should render with no error 1`] = `
       </svg>
     </a>
     <ul
-      class="sc-crzoUp kA-dAHC"
+      class="sc-fujyUd eRZpaq"
     >
       <a
-        class="sc-dIsAE fLQdRc"
+        class="sc-pNWxx dVrTlX"
       >
         1
       </a>
     </ul>
     <a
-      class="sc-bqGHjH"
+      class="sc-jrsJCI"
     >
       <svg
         color="#5dbcd2"

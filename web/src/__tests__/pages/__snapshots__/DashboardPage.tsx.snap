@@ -2,126 +2,14 @@
 
 exports[`Dashboard Page should render with no error 1`] = `
 <div
-  class="sc-bdnylx"
+  class="sc-gtssRu iYVSTf"
 >
-  <div
-    class="sc-gtssRu khYAvu"
-  >
-    <div>
-      <p>
-        <a
-          href="/"
-        >
-          Acesse sua Conta
-        </a>
-        ou
-        <a
-          href="/"
-        >
-          Cadastre-se
-        </a>
-      </p>
-    </div>
-  </div>
-  <div
-    class="sc-dlnjPT eVOeIi"
-  >
-    <div
-      class="sc-hKFyIo bkiLPl"
+  <p>
+    <a
+      href="/"
     >
-      <div>
-        <button
-          class="sc-fujyUd hjIYgO"
-        >
-          <div />
-          <div />
-          <div />
-        </button>
-        <nav
-          class="sc-pNWxx eiFkBv"
-        >
-          <ul>
-            <li>
-              <a
-                href="/"
-              >
-                Página inicial
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-              >
-                Contato
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div
-      class="sc-jSFkmK dMcosL"
-    >
-      <img
-        alt="Escrito Webjump com um símbolo de exclamação ao lado"
-        src="logo.png"
-      />
-    </div>
-    <div
-      class="sc-gKAblj gRSOIu"
-    >
-      <svg
-        color="#c81120"
-        fill="currentColor"
-        height="25"
-        size="25"
-        stroke="currentColor"
-        stroke-width="0"
-        style="color: rgb(200, 17, 32);"
-        viewBox="0 0 24 24"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
-        />
-      </svg>
-    </div>
-    <div
-      class="sc-iCoHVE iEnsXY"
-    >
-      <div
-        class="sc-jrsJCI koRDCM"
-      >
-        <input />
-        <button
-          name="search"
-          type="submit"
-        >
-          Buscar
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    class="sc-eCApGN hrzgCt"
-  >
-    <ul>
-      <li>
-        <button
-          type="button"
-        >
-          Página inicial
-        </button>
-      </li>
-      <li>
-        <button
-          type="button"
-        >
-          Contato
-        </button>
-      </li>
-    </ul>
-  </div>
+      Página Inicial 
+    </a>
+  </p>
 </div>
 `;

@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import logoImg from 'assets/logo.png';
 
-import { useCategory } from 'hooks/category';
-import { useHistory, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Container,
   Login,
@@ -21,22 +20,14 @@ import Input from '../Input';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
-  const { categoriesList, setCategory } = useCategory();
-  const history = useHistory();
-
-  function handleCategory(path: string) {
-    setCategory(path);
-    history.push('/');
-  }
-
   return (
     <Container>
       <Login>
         <div>
           <p>
-            <a href="/">Acesse sua Conta</a>
+            <Link to="/">Acesse sua Conta</Link>
             ou
-            <a href="/">Cadastre-se</a>
+            <Link to="/">Cadastre-se</Link>
           </p>
         </div>
       </Login>
@@ -70,15 +61,15 @@ const Header: React.FC = () => {
           <li>
             <Link to="/">Página inicial</Link>
           </li>
-          {categoriesList &&
-            categoriesList.map(({ name, path }) => (
-              <li key={name}>
-                <button type="button" onClick={() => handleCategory(path)}>
-                  {' '}
-                  {name}
-                </button>
-              </li>
-            ))}
+          <li>
+            <Link to="/categories/camisetas">Camisetas</Link>
+          </li>
+          <li>
+            <Link to="/categories/calcas">Calças</Link>
+          </li>
+          <li>
+            <Link to="/categories/calcados">Calçados</Link>
+          </li>
           <li>
             <Link to="/cart">Carrinho</Link>
           </li>

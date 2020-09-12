@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { CartProvider } from 'hooks/cart';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Product from '../../components/Products/Product';
 
 describe('<Product />', () => {
@@ -19,7 +20,9 @@ describe('<Product />', () => {
 
     const { container } = render(
       <CartProvider>
-        <Product imageUrl="" alt="" name="" price={2} item={product} />
+        <Router>
+          <Product imageUrl="" alt="" name="" price={2} item={product} />
+        </Router>
       </CartProvider>,
     );
 

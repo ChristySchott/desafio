@@ -1,11 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
+import { BrowserRouter } from 'react-router-dom';
 import Products from '../../components/Products';
 
 describe('<Products />', () => {
   it('should render with no error', () => {
-    const { container } = render(<Products />);
+    const { container } = render(
+      <BrowserRouter>
+        <Products />
+      </BrowserRouter>,
+    );
 
     expect(container).toBeTruthy();
 

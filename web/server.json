@@ -62,7 +62,7 @@
       }
     },
     {
-      "id": 1,
+      "id": 5,
       "sku": "sku-1",
       "path": "camiseta-preta",
       "name": "Camiseta Preta",
@@ -74,7 +74,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 6,
       "sku": "sku-2",
       "path": "camiseta-laranja",
       "name": "Camiseta Laranja",
@@ -247,19 +247,6 @@
       }
     },
     {
-      "id": 22,
-      "sku": "sku-10",
-      "path": "calca-social",
-      "name": "Calça Social",
-      "image": "assets/products/pants-1.jpg",
-      "price": 39.9,
-      "specialPrice": 29.9,
-      "filter": {
-        "type": "Caminhada",
-        "color": "Azul"
-      }
-    },
-    {
       "id": 23,
       "sku": "sku-10",
       "path": "calca-social",
@@ -282,7 +269,7 @@
       "specialPrice": 29.9,
       "filter": {
         "type": "Caminhada",
-        "color": "Amarelo"
+        "color": "Azul"
       }
     },
     {
@@ -294,8 +281,8 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Corrida",
-        "color": "Azul"
+        "type": "Caminhada",
+        "color": "Amarelo"
       }
     },
     {
@@ -308,11 +295,24 @@
       "specialPrice": 29.9,
       "filter": {
         "type": "Corrida",
-        "color": "Amarelo"
+        "color": "Azul"
       }
     },
     {
       "id": 27,
+      "sku": "sku-10",
+      "path": "calca-social",
+      "name": "Calça Social",
+      "image": "assets/products/pants-1.jpg",
+      "price": 39.9,
+      "specialPrice": 29.9,
+      "filter": {
+        "type": "Corrida",
+        "color": "Amarelo"
+      }
+    },
+    {
+      "id": 28,
       "sku": "sku-10",
       "path": "calca-social",
       "name": "Calça Social",
@@ -325,7 +325,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 29,
       "sku": "sku-10",
       "path": "calca-social",
       "name": "Calça Social",
@@ -338,7 +338,7 @@
       }
     },
     {
-      "id": 29,
+      "id": 30,
       "sku": "sku-10",
       "path": "calca-social",
       "name": "Calça Social",
@@ -351,7 +351,7 @@
       }
     },
     {
-      "id": 30,
+      "id": 33,
       "sku": "sku-10",
       "path": "calca-social",
       "name": "Calça Social",

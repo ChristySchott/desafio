@@ -4,6 +4,7 @@ import React from 'react';
 
 import { useFilter } from 'hooks/filter';
 import { useColorFilter } from 'hooks/color';
+import { Link } from 'react-router-dom';
 import { Container, Menu, Colors } from './styles';
 
 const Filters: React.FC = () => {
@@ -18,13 +19,13 @@ const Filters: React.FC = () => {
         <h3>Categorias</h3>
         <ul>
           <li>
-            <a href="/">Roupas</a>
+            <Link to="/">Roupas</Link>
           </li>
           <li>
-            <a href="/">Sapatos</a>
+            <Link to="/">Sapatos</Link>
           </li>
           <li>
-            <a href="/">Acessórios</a>
+            <Link to="/">Acessórios</Link>
           </li>
         </ul>
 
