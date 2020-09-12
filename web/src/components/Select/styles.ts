@@ -44,9 +44,6 @@ export const Box = styled.section`
     appearance: none;
     border: 1px solid #ddd;
     background: #fff !important;
-    background-repeat: no-repeat;
-    background-position: 90% center;
-    background-size: auto;
     cursor: pointer;
     flex-wrap: nowrap !important;
     font-family: 'Opens Sans';
@@ -62,7 +59,9 @@ export const Box = styled.section`
   }
 
   .css-1hb7zxy-IndicatorsContainer {
-    display: none;
+    svg {
+      color: #888;
+    }
   }
   .css-26l3qy-menu {
     top: 115%;
