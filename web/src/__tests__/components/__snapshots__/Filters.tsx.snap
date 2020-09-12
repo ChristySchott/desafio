@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filters /> should render with no error 1`] = `
+<div
+  class="sc-bdnylx bcOrZQ"
+>
+  <div
+    class="sc-gtssRu fPRKtj"
+  >
+    <h2>
+      Filtre por
+    </h2>
+    <h3>
+      Categorias
+    </h3>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Roupas
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Sapatos
+        </a>
+      </li>
+      <li>
+        <a
+          href="/"
+        >
+          Acessórios
+        </a>
+      </li>
+    </ul>
+    <h3>
+      Cores
+    </h3>
+    <ul
+      class="sc-dlnjPT fGujzH"
+    >
+      <li>
+        <button
+          type="button"
+        />
+      </li>
+      <li>
+        <button
+          type="button"
+        />
+      </li>
+      <li>
+        <button
+          type="button"
+        />
+      </li>
+    </ul>
+    <h3>
+      Tipo
+    </h3>
+    <ul>
+      <li>
+        <button
+          type="button"
+        >
+          Corrida
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+        >
+          Caminhada
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+        >
+          Casual
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+        >
+          Social
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

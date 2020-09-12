@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Burger /> should render with no error 1`] = `
+<button
+  class="sc-bdnylx kAubux"
+  open=""
+>
+  <div />
+  <div />
+  <div />
+</button>
+`;
