@@ -6,6 +6,7 @@ export const Container = styled.li`
 
   @media (min-width: 768px) {
     width: 150px;
+    margin: 0 0 25px;
   }
 
   @media (min-width: 1024px) {

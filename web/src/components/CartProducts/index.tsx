@@ -1,12 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
-import { BsGrid3X3GapFill } from 'react-icons/bs';
-import { RiLayout2Fill } from 'react-icons/ri';
 
 import { useCart } from 'hooks/cart';
 import { FiShoppingCart } from 'react-icons/fi';
-import { Container, View, Menu, Items, CartState, CartFilled } from './styles';
+import { Container, Items, CartState, CartFilled } from './styles';
 import CartProduct from './CartProduct';
 
 const CartProducts: React.FC = () => {
@@ -17,13 +15,6 @@ const CartProducts: React.FC = () => {
       <header>
         <h2>Carrinho</h2>
       </header>
-
-      <Menu>
-        <View>
-          <BsGrid3X3GapFill size={20} color="#5dbcd2" />
-          <RiLayout2Fill size={24} />
-        </View>
-      </Menu>
 
       <Items>
         {products &&

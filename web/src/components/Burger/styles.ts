@@ -14,7 +14,7 @@ const Container = styled.button<ContainerProps>`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 30;
 
   ${({ open }) =>
     open &&

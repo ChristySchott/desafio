@@ -95,61 +95,74 @@ export const Items = styled.ul<ItemProps>`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
 
   list-style: none;
 
-  @media (min-width: 768px) {
-    align-items: flex-start;
-    flex-direction: row;
-
-    li + li {
-      margin-left: 28px;
-    }
-
-    li:nth-child(4),
-    li:nth-child(7) {
-      margin-left: 0;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    li + li {
-      margin-left: 20px;
-    }
-
-    li:nth-child(4),
-    li:nth-child(7) {
-      margin-left: 20px;
-    }
-
-    li:nth-child(5n) {
-      margin-left: 0;
-    }
-  }
-
-  @media (min-width: 1440px) {
-    li + li {
-      margin-left: 38px;
-    }
-
-    li:nth-child(4),
-    li:nth-child(7) {
-      margin-left: 38px;
-    }
-  }
-
   ${props =>
-    props.layoutGridFill &&
-    css`
-      justify-content: space-around;
-      @media (min-width: 768px) {
-        li {
-          width: 35%;
-          margin-bottom: 15px !important;
-        }
-      }
-    `}
+    props.layoutGridFill
+      ? css`
+          justify-content: space-around;
+          @media (min-width: 768px) {
+            li {
+              width: 35%;
+              margin-bottom: 15px !important;
+            }
+          }
+        `
+      : css`
+          flex-direction: column;
+
+          @media (min-width: 768px) {
+            align-items: flex-start;
+            flex-direction: row;
+
+            li + li {
+              margin-left: 28px;
+            }
+
+            li:nth-child(4),
+            li:nth-child(7) {
+              margin-left: 0;
+            }
+          }
+
+          @media (min-width: 1024px) {
+            li + li {
+              margin-left: 20px;
+            }
+
+            li:nth-child(4),
+            li:nth-child(7) {
+              margin-left: 20px;
+            }
+
+            li:nth-child(5n) {
+              margin-left: 0;
+            }
+          }
+
+          @media (min-width: 1200px) {
+            li + li {
+              margin-left: 28px;
+            }
+
+            li:nth-child(4),
+            li:nth-child(7) {
+              margin-left: 28px;
+            }
+          }
+
+          @media (min-width: 1440px) {
+            li + li {
+              margin-left: 38px;
+            }
+
+            li:nth-child(4),
+            li:nth-child(7) {
+              margin-left: 38px;
+            }
+          }
+        `}
 `;
 
 export const EmptyState = styled.div`

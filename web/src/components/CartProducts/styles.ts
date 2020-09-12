@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 
   header {
-    margin: 10px 0;
+    margin-top: 10px;
 
     @media (min-width: 768px) {
       display: flex;
@@ -44,60 +44,48 @@ export const Container = styled.div`
   }
 `;
 
-export const Menu = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 8px;
-
-  @media (min-width: 768px) {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 8px 0;
-  }
-`;
-
-export const OrderBy = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-
-  span {
-    color: #888;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin-right: 10px;
-  }
-
-  @media (min-width: 768px) {
-    justify-content: flex-end;
-  }
-`;
-
-export const View = styled.div`
-  display: none;
-  padding-left: 2px;
-
-  svg + svg {
-    margin-left: 5px;
-  }
-
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-`;
-
 export const Items = styled.ul`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 
   list-style: none;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row;
+
+    li + li {
+      margin-left: 45px;
+    }
+
+    li:nth-child(5),
+    li:nth-child(9) {
+      margin-left: 0px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    li + li {
+      margin-left: 30px;
+    }
+
+    li:nth-child(5),
+    li:nth-child(9) {
+      margin-left: 30px;
+    }
+
+    li:nth-child(6) {
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    li + li {
+      margin-left: 55px;
+    }
+  }
 `;
 
 export const CartState = styled.div`
