@@ -38,7 +38,8 @@ export const Container = styled.li`
 
 export const Image = styled.div`
   border: 1px solid #ddd;
-
+  max-height: 168px;
+  overflow: hidden;
   img {
     width: 100%;
   }

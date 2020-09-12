@@ -15,7 +15,14 @@ interface ProductProps {
   item: ProductInterface;
 }
 
-const Product: React.FC<ProductProps> = ({ alt, name, offer, price, item }) => {
+const Product: React.FC<ProductProps> = ({
+  alt,
+  imageUrl,
+  name,
+  offer,
+  price,
+  item,
+}) => {
   const { addToCart } = useCart();
 
   function handleAddToCart(product: ProductInterface): void {
@@ -26,7 +33,7 @@ const Product: React.FC<ProductProps> = ({ alt, name, offer, price, item }) => {
     <Container>
       <a href="/">
         <Image>
-          <img src={require('assets/products/shoes-6.jpg')} alt={alt} />
+          <img src={require(`assets/products/${imageUrl}`)} alt={alt} />
         </Image>
       </a>
 
