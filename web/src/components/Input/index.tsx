@@ -22,6 +22,7 @@ const Input: React.FC = () => {
         name="search"
         value={inputValue}
         onChange={handleChange}
+        onBlur={handleSearch}
         onKeyPress={handleSearch}
       />
       <button type="button" name="button-search" onClick={handleSearch}>

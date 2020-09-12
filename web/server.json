@@ -36,7 +36,7 @@
       "image": "shirt-2.jpg",
       "price": 40.5,
       "filter": {
-        "color": "Azul"
+        "tipo": "Corrida"
       }
     },
     {
@@ -70,14 +70,14 @@
       "price": 59.9,
       "filter": {
         "type": "Caminhada",
-        "color": "Amarelo"
+        "color": "Preto"
       }
     },
     {
       "id": 6,
       "sku": "sku-2",
       "path": "camiseta-laranja",
-      "name": "Camiseta Laranja",
+      "name": "Camiseta Amarela",
       "image": "shirt-2.jpg",
       "price": 40.5,
       "filter": {
@@ -204,15 +204,14 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Social",
-        "color": "Amarelo"
+        "type": "Social"
       }
     },
     {
       "id": 20,
       "sku": "sku-11",
       "path": "calca-feminina",
-      "name": "Calça Feminina",
+      "name": "Calça Feminina Vermelha",
       "image": "pants-2.jpg",
       "price": 24.15,
       "filter": {
@@ -224,7 +223,7 @@
       "id": 21,
       "sku": "sku-10",
       "path": "calca-social",
-      "name": "Calça Social",
+      "name": "Calça Social Amarela",
       "image": "pants-1.jpg",
       "price": 39.9,
       "specialPrice": 29.9,
@@ -237,7 +236,7 @@
       "id": 22,
       "sku": "sku-10",
       "path": "calca-social",
-      "name": "Calça Social",
+      "name": "Calça Social Azul",
       "image": "pants-1.jpg",
       "price": 39.9,
       "specialPrice": 29.9,
@@ -250,7 +249,7 @@
       "id": 23,
       "sku": "sku-10",
       "path": "calca-social",
-      "name": "Calça Social",
+      "name": "Calça Social Azul",
       "image": "pants-1.jpg",
       "price": 39.9,
       "specialPrice": 29.9,
@@ -263,7 +262,7 @@
       "id": 24,
       "sku": "sku-10",
       "path": "calca-social",
-      "name": "Calça Social",
+      "name": "Calça Social Azul",
       "image": "pants-1.jpg",
       "price": 39.9,
       "specialPrice": 29.9,
@@ -276,7 +275,7 @@
       "id": 25,
       "sku": "sku-10",
       "path": "calca-social",
-      "name": "Calça Social",
+      "name": "Calça Social Amarela",
       "image": "pants-1.jpg",
       "price": 39.9,
       "specialPrice": 29.9,
@@ -289,7 +288,7 @@
       "id": 26,
       "sku": "sku-10",
       "path": "calca-social",
-      "name": "Calça Social",
+      "name": "Calça Social Azul",
       "image": "pants-1.jpg",
       "price": 39.9,
       "specialPrice": 29.9,
@@ -307,8 +306,7 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Corrida",
-        "color": "Amarelo"
+        "type": "Corrida"
       }
     },
     {
@@ -320,8 +318,7 @@
       "price": 39.9,
       "specialPrice": 29.9,
       "filter": {
-        "type": "Social",
-        "color": "Vermelho"
+        "type": "Social"
       }
     },
     {
@@ -373,14 +370,14 @@
       "image": "shoes-1.jpg",
       "price": 129.9,
       "filter": {
-        "color": "Vermelho"
+        "color": "Preto"
       }
     },
     {
       "id": 32,
       "sku": "sku-32",
       "path": "tenis-preto",
-      "name": "Tênis Preto Masculino",
+      "name": "Tênis Amarelo Masculino",
       "image": "shoes-2.jpg",
       "price": 140.5,
       "filter": {
@@ -458,7 +455,7 @@
       "id": 39,
       "sku": "sku-39",
       "path": "tenis-casual",
-      "name": "Tênis Casual Bege",
+      "name": "Tênis Casual Amarelo",
       "image": "shoes-9.jpg",
       "price": 198.0,
       "specialPrice": 180.9,
@@ -475,7 +472,7 @@
       "price": 329.0,
       "filter": {
         "type": "Social",
-        "color": "Amarelo"
+        "color": "Azul"
       }
     },
     {
@@ -512,7 +509,7 @@
       "specialPrice": 50.9,
       "filter": {
         "type": "Corrida",
-        "color": "Amarelo"
+        "color": "Preto"
       }
     }
   ]
