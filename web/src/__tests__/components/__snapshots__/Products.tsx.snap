@@ -171,15 +171,7 @@ exports[`<Products /> should render with no error 1`] = `
   <section
     class="sc-iCoHVE hINJpc"
   >
-    <ul
-      class="sc-fujyUd eRZpaq"
-    >
-      <a
-        class="sc-pNWxx dVrTlX"
-      >
-        1
-      </a>
-    </ul>
+    
   </section>
 </div>
 `;
