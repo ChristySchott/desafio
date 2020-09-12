@@ -12,7 +12,7 @@ interface CategoryProps {
 const CategoryCard: React.FC<CategoryProps> = ({ image, name, path }) => {
   return (
     <Container image={image}>
-      <Link to={`/categories/${path}`}>
+      <Link to={`/${path}`}>
         <h2>{name}</h2>
       </Link>
     </Container>

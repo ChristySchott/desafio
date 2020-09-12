@@ -18,7 +18,7 @@ export const Main = styled.main`
       padding: 0 15px;
 
       li {
-        width: 32%;
+        width: 33%;
       }
     }
 
@@ -28,7 +28,34 @@ export const Main = styled.main`
   }
 `;
 
-export const Page = styled.div`
+export const Cart = styled.section`
+  ul {
+    list-style: none;
+    display: flex;
+    max-width: 1048px;
+    margin: 10px auto 20px;
+
+    li {
+      background-position: center 60%;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 20px;
+      justify-content: flex-start;
+      padding: 0 15px;
+
+      li {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0;
+    }
+  }
+`;
+
+export const Title = styled.div`
   margin-bottom: 10px;
   max-width: 1048px;
   margin: 0 auto;
@@ -42,9 +69,13 @@ export const Page = styled.div`
     color: #100c14;
   }
 
-  span {
+  h3 {
     color: #c61a28;
     text-transform: capitalize;
-    margin-left: 4px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 15px 0 0;
+    margin-top: 15px;
   }
 `;
