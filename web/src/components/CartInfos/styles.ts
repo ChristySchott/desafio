@@ -21,9 +21,8 @@ const Container = styled.div`
     background: #fff;
   }
 
-  button {
+  a {
     background: #5dbcd2;
-    border: none;
     border-radius: 4px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;

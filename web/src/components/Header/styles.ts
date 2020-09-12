@@ -124,7 +124,11 @@ export const NavWeb = styled.div`
 `;
 
 export const Logo = styled.div`
+  @media (min-width: 768px) {
+    width: 180px;
+  }
   img {
+    width: 100%;
     margin-top: 4px;
   }
 `;

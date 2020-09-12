@@ -41,10 +41,12 @@ const Header: React.FC = () => {
         </NavMobile>
 
         <Logo>
-          <img
-            src={logoImg}
-            alt="Escrito Webjump com um símbolo de exclamação ao lado"
-          />
+          <Link to="/">
+            <img
+              src={logoImg}
+              alt="Escrito Webjump com um símbolo de exclamação ao lado"
+            />
+          </Link>
         </Logo>
 
         <SearchIcon>
