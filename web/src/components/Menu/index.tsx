@@ -5,23 +5,32 @@ import Container from './styles';
 
 interface MenuProps {
   open: boolean;
+  setOpen: Function;
 }
 
-const Menu: React.FC<MenuProps> = ({ open }) => {
+const Menu: React.FC<MenuProps> = ({ open, setOpen }) => {
   return (
     <Container open={open}>
       <ul>
         <li>
-          <Link to="/">Página inicial</Link>
+          <Link to="/" onClick={() => setOpen(false)}>
+            Página inicial
+          </Link>
         </li>
         <li>
-          <Link to="/categories/camisetas">Camisetas</Link>
+          <Link to="/categories/camisetas" onClick={() => setOpen(false)}>
+            Camisetas
+          </Link>
         </li>
         <li>
-          <Link to="/categories/calcas">Calças</Link>
+          <Link to="/categories/calcas" onClick={() => setOpen(false)}>
+            Calças
+          </Link>
         </li>
         <li>
-          <Link to="/categories/calcados">Calçados</Link>
+          <Link to="/categories/calcados" onClick={() => setOpen(false)}>
+            Calçados
+          </Link>
         </li>
         <li>
           <Link to="cart">Carrinho</Link>

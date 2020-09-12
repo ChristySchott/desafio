@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         <NavMobile>
           <div>
             <Burger open={open} setOpen={setOpen} />
-            <Menu open={open} />
+            <Menu open={open} setOpen={setOpen} />
           </div>
         </NavMobile>
 
