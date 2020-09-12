@@ -8,11 +8,11 @@ exports[`<Product /> should render with no error 1`] = `
     href="/"
   >
     <div
-      class="sc-gtssRu hQwYBx"
+      class="sc-gtssRu kkNFQg"
     >
       <img
         alt=""
-        src="shoes-6.jpg"
+        src="pants-1.jpg"
       />
     </div>
   </a>

@@ -2,14 +2,10 @@
 
 exports[`Dashboard Page should render with no error 1`] = `
 <div
-  class="sc-gtssRu iYVSTf"
+  class="sc-hKFyIo Zhoa-D"
 >
-  <p>
-    <a
-      href="/"
-    >
-      Página Inicial 
-    </a>
-  </p>
+  <h3>
+    Categorias
+  </h3>
 </div>
 `;

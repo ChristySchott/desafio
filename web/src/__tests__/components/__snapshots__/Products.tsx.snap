@@ -5,53 +5,61 @@ exports[`<Products /> should render with no error 1`] = `
   class="sc-kEqYlL hQzvMe"
 >
   <header>
-    <h2>
-      Oi
-    </h2>
+    <h2 />
     <div />
   </header>
   <div
     class="sc-iqAbSa fDElvS"
   >
     <div
-      class="sc-dIsAE fPMEPg"
+      class="sc-dIsAE cMOMtg"
     >
-      <svg
-        color="#5dbcd2"
-        fill="currentColor"
-        height="20"
-        size="20"
-        stroke="currentColor"
-        stroke-width="0"
-        style="color: rgb(93, 188, 210);"
-        viewBox="0 0 16 16"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        type="button"
       >
-        <path
-          d="M1 2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H2a1 1 0 01-1-1V2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H7a1 1 0 01-1-1V2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V2zM1 7a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H2a1 1 0 01-1-1V7zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H7a1 1 0 01-1-1V7zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V7zM1 12a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H2a1 1 0 01-1-1v-2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H7a1 1 0 01-1-1v-2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z"
-        />
-      </svg>
-      <svg
-        fill="currentColor"
-        height="24"
-        size="24"
-        stroke="currentColor"
-        stroke-width="0"
-        viewBox="0 0 24 24"
-        width="24"
-        xmlns="http://www.w3.org/2000/svg"
+        <svg
+          color="#5dbcd2"
+          fill="currentColor"
+          height="20"
+          size="20"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(93, 188, 210);"
+          viewBox="0 0 16 16"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H2a1 1 0 01-1-1V2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H7a1 1 0 01-1-1V2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V2zM1 7a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H2a1 1 0 01-1-1V7zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H7a1 1 0 01-1-1V7zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1V7zM1 12a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H2a1 1 0 01-1-1v-2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1H7a1 1 0 01-1-1v-2zm5 0a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 01-1 1h-2a1 1 0 01-1-1v-2z"
+          />
+        </svg>
+      </button>
+      <button
+        type="button"
       >
-        <g>
-          <path
-            d="M0 0h24v24H0z"
-            fill="none"
-          />
-          <path
-            d="M11 3v18H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7zm10 10v7a1 1 0 0 1-1 1h-7v-8h8zM20 3a1 1 0 0 1 1 1v7h-8V3h7z"
-          />
-        </g>
-      </svg>
+        <svg
+          color="#888"
+          fill="currentColor"
+          height="23.5"
+          size="23.5"
+          stroke="currentColor"
+          stroke-width="0"
+          style="color: rgb(136, 136, 136);"
+          viewBox="0 0 24 24"
+          width="23.5"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M22 12.999V20a1 1 0 0 1-1 1h-8v-8.001h9zm-11 0V21H3a1 1 0 0 1-1-1v-7.001h9zM11 3v7.999H2V4a1 1 0 0 1 1-1h8zm10 0a1 1 0 0 1 1 1v6.999h-9V3h8z"
+            />
+          </g>
+        </svg>
+      </button>
     </div>
     <div
       class="sc-crzoUp kBxbcP"
@@ -63,7 +71,7 @@ exports[`<Products /> should render with no error 1`] = `
         class="sc-jSFkmK dTgRnu"
       >
         <section
-          class="sc-gKAblj iAVQIr"
+          class="sc-gKAblj iMPPEJ"
         >
           <div
             class=" css-2b097c-container"
@@ -75,9 +83,9 @@ exports[`<Products /> should render with no error 1`] = `
                 class=" css-g1d714-ValueContainer"
               >
                 <div
-                  class=" css-1wa3eu0-placeholder"
+                  class=" css-1uccc91-singleValue"
                 >
-                  Preço
+                  Menor preço
                 </div>
                 <input
                   aria-autocomplete="list"
@@ -116,7 +124,7 @@ exports[`<Products /> should render with no error 1`] = `
             <input
               name="orderBy"
               type="hidden"
-              value=""
+              value="CRESC"
             />
           </div>
         </section>
@@ -124,7 +132,7 @@ exports[`<Products /> should render with no error 1`] = `
     </div>
   </div>
   <ul
-    class="sc-bqGHjH gaFTWQ"
+    class="sc-bqGHjH ewVcGG"
   >
     <div
       class="sc-ksluoS edsndP"
@@ -161,30 +169,8 @@ exports[`<Products /> should render with no error 1`] = `
     </div>
   </ul>
   <section
-    class="sc-iCoHVE cEehsy"
+    class="sc-iCoHVE hINJpc"
   >
-    <a
-      class="sc-jrsJCI"
-    >
-      <svg
-        color="#5dbcd2"
-        fill="none"
-        height="20"
-        size="20"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        style="color: rgb(93, 188, 210);"
-        viewBox="0 0 24 24"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <polyline
-          points="15 18 9 12 15 6"
-        />
-      </svg>
-    </a>
     <ul
       class="sc-fujyUd eRZpaq"
     >
@@ -194,28 +180,6 @@ exports[`<Products /> should render with no error 1`] = `
         1
       </a>
     </ul>
-    <a
-      class="sc-jrsJCI"
-    >
-      <svg
-        color="#5dbcd2"
-        fill="none"
-        height="20"
-        size="20"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        style="color: rgb(93, 188, 210);"
-        viewBox="0 0 24 24"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <polyline
-          points="9 18 15 12 9 6"
-        />
-      </svg>
-    </a>
   </section>
 </div>
 `;

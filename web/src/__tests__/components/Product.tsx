@@ -21,7 +21,13 @@ describe('<Product />', () => {
     const { container } = render(
       <CartProvider>
         <Router>
-          <Product imageUrl="" alt="" name="" price={2} item={product} />
+          <Product
+            imageUrl="pants-1.jpg"
+            alt=""
+            name=""
+            price={2}
+            item={product}
+          />
         </Router>
       </CartProvider>,
     );

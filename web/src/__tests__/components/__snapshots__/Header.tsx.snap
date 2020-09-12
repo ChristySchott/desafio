@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Header /> should render with no error 1`] = `
-<div
+<header
   class="sc-bdnylx"
 >
   <div
@@ -81,12 +81,16 @@ exports[`<Header /> should render with no error 1`] = `
       </div>
     </div>
     <div
-      class="sc-jSFkmK dMcosL"
+      class="sc-jSFkmK eZYaKr"
     >
-      <img
-        alt="Escrito Webjump com um símbolo de exclamação ao lado"
-        src="logo.png"
-      />
+      <a
+        href="/"
+      >
+        <img
+          alt="Escrito Webjump com um símbolo de exclamação ao lado"
+          src="logo.png"
+        />
+      </a>
     </div>
     <div
       class="sc-gKAblj gRSOIu"
@@ -112,12 +116,15 @@ exports[`<Header /> should render with no error 1`] = `
       class="sc-iCoHVE iEnsXY"
     >
       <div
-        class="sc-jrsJCI koRDCM"
+        class="sc-jrsJCI eVvqcH"
       >
-        <input />
-        <button
+        <input
           name="search"
-          type="submit"
+          value=""
+        />
+        <button
+          name="button-search"
+          type="button"
         >
           Buscar
         </button>
@@ -125,11 +132,13 @@ exports[`<Header /> should render with no error 1`] = `
     </div>
   </div>
   <div
-    class="sc-eCApGN enNXvW"
+    class="sc-eCApGN ljxerL"
   >
     <ul>
       <li>
         <a
+          aria-current="page"
+          class="active"
           href="/"
         >
           Página inicial
@@ -165,5 +174,5 @@ exports[`<Header /> should render with no error 1`] = `
       </li>
     </ul>
   </div>
-</div>
+</header>
 `;
