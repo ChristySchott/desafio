@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BiSearch } from 'react-icons/bi';
 import logoImg from 'assets/logo.png';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import {
   Container,
   Login,
@@ -61,19 +61,29 @@ const Header: React.FC = () => {
       <NavWeb>
         <ul>
           <li>
-            <Link to="/">Página inicial</Link>
+            <NavLink activeClassName="active" to="/" exact>
+              Página inicial
+            </NavLink>
           </li>
           <li>
-            <Link to="/categories/camisetas">Camisetas</Link>
+            <NavLink activeClassName="active" to="/categories/camisetas">
+              Camisetas
+            </NavLink>
           </li>
           <li>
-            <Link to="/categories/calcas">Calças</Link>
+            <NavLink activeClassName="active" to="/categories/calcas">
+              Calças
+            </NavLink>
           </li>
           <li>
-            <Link to="/categories/calcados">Calçados</Link>
+            <NavLink activeClassName="active" to="/categories/calcados">
+              Calçados
+            </NavLink>
           </li>
           <li>
-            <Link to="/cart">Carrinho</Link>
+            <NavLink activeClassName="active" to="/cart">
+              Carrinho
+            </NavLink>
           </li>
         </ul>
       </NavWeb>

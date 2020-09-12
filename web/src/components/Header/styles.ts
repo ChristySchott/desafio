@@ -77,6 +77,19 @@ export const NavWeb = styled.div`
   background: #c61a28;
   padding: 15px 0;
 
+  .active {
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 34px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background: #5dbcd2;
+    }
+  }
+
   @media (min-width: 768px) {
     display: block;
   }
@@ -93,6 +106,10 @@ export const NavWeb = styled.div`
     display: flex;
     justify-content: space-between;
     list-style: none;
+
+    li {
+      position: relative;
+    }
 
     @media (min-width: 1024px) {
       justify-content: flex-start;
@@ -115,10 +132,6 @@ export const NavWeb = styled.div`
       transition: color 0.2s;
 
       position: relative;
-
-      &:hover {
-        color: #5dbcd2;
-      }
     }
   }
 `;
