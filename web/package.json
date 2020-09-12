@@ -29,7 +29,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "dev:server": "json-server server.json -p 3333",
-    "test": "react-app-rewired test",
+    "test": "CI=true react-app-rewired test",
     "lint": "eslint --fix src/**/*.ts"
   },
   "husky": {
@@ -39,7 +39,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint"
+      "yarn lint",
+      "yarn test a"
     ]
   },
   "browserslist": {
