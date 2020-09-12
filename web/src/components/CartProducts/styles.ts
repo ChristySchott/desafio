@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
+  margin-top: 40px;
 
   @media (min-width: 768px) {
     padding: 0 15px;
@@ -94,7 +95,7 @@ export const CartState = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin: 40px 0 80px;
 
   @media (min-width: 768px) {
     margin-top: 100px;
