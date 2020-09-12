@@ -6,11 +6,19 @@ import shirts from 'assets/dashboard/shirts.jpg';
 import shoes from 'assets/dashboard/shoes.jpg';
 import cart from 'assets/dashboard/cart.jpg';
 
+import { Helmet } from 'react-helmet';
 import { Main, Title, Cart } from './styles';
 
 const Dashboard: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Webjump | Dashboard</title>
+        <meta
+          name="description"
+          content="Página inicial do e-commerce da Webjump"
+        />
+      </Helmet>
       <Title>
         <h3>Categorias</h3>
       </Title>

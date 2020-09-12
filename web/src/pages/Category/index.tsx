@@ -5,6 +5,7 @@ import Filters from 'components/Filters';
 import Products from 'components/Products';
 import CartInfos from 'components/CartInfos';
 
+import { Helmet } from 'react-helmet';
 import { Main, Page } from './styles';
 
 interface CategoryParams {
@@ -15,6 +16,13 @@ const Category: React.FC = () => {
   const { params } = useRouteMatch<CategoryParams>();
   return (
     <>
+      <Helmet>
+        <title>Webjump | Categorias</title>
+        <meta
+          name="description"
+          content={`E-commerce da Webjump, buscando pela categoria ${params.category}`}
+        />
+      </Helmet>
       <Page>
         <p>
           <Link to="/">Página Inicial </Link>

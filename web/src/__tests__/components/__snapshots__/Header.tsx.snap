@@ -31,14 +31,14 @@ exports[`<Header /> should render with no error 1`] = `
     >
       <div>
         <button
-          class="sc-fujyUd eZaVQk"
+          class="sc-pNWxx gbKKek"
         >
           <div />
           <div />
           <div />
         </button>
         <nav
-          class="sc-pNWxx emPlWH"
+          class="sc-jrsJCI jKjXpx"
         >
           <ul>
             <li>
@@ -92,8 +92,9 @@ exports[`<Header /> should render with no error 1`] = `
         />
       </a>
     </div>
-    <div
-      class="sc-gKAblj gRSOIu"
+    <button
+      class="sc-gKAblj bEhKYw"
+      type="button"
     >
       <svg
         color="#c81120"
@@ -111,12 +112,12 @@ exports[`<Header /> should render with no error 1`] = `
           d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"
         />
       </svg>
-    </div>
+    </button>
     <div
       class="sc-iCoHVE iEnsXY"
     >
       <div
-        class="sc-jrsJCI eVvqcH"
+        class="sc-kEqYlL dDWRoC"
       >
         <input
           name="search"
@@ -129,6 +130,24 @@ exports[`<Header /> should render with no error 1`] = `
           Buscar
         </button>
       </div>
+    </div>
+  </div>
+  <div
+    class="sc-fujyUd jANNsm"
+  >
+    <div
+      class="sc-kEqYlL dDWRoC"
+    >
+      <input
+        name="search"
+        value=""
+      />
+      <button
+        name="button-search"
+        type="button"
+      >
+        Buscar
+      </button>
     </div>
   </div>
   <div
