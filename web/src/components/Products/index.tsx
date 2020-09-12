@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
-import { RiLayout2Fill } from 'react-icons/ri';
+import { RiLayoutGridFill } from 'react-icons/ri';
 import { FiSearch } from 'react-icons/fi';
 
 import api from 'services/api';
@@ -35,12 +35,14 @@ const orderOptions: OptionType[] = [
 
 const Products: React.FC = () => {
   const { params } = useRouteMatch<CategoryParams>();
+
   const { filter, setFilter } = useFilter();
   const { colorToFilter, setColorToFilter } = useColorFilter();
 
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchOrder, setSearchOrder] = useState('CRESC');
+  const [gridType, setGridType] = useState(1);
 
   let filters = '';
   let filterByColor = '';
@@ -92,8 +94,18 @@ const Products: React.FC = () => {
 
       <Menu>
         <View>
-          <BsGrid3X3GapFill size={20} color="#5dbcd2" />
-          <RiLayout2Fill size={24} />
+          <button type="button" onClick={() => setGridType(1)}>
+            <BsGrid3X3GapFill
+              size={20}
+              color={gridType === 1 ? '#5dbcd2' : '#888'}
+            />
+          </button>
+          <button type="button" onClick={() => setGridType(2)}>
+            <RiLayoutGridFill
+              size={23.5}
+              color={gridType === 2 ? '#5dbcd2' : '#888'}
+            />
+          </button>
         </View>
         <OrderBy>
           <span>Ordenar por</span>
@@ -110,7 +122,7 @@ const Products: React.FC = () => {
         </OrderBy>
       </Menu>
 
-      <Items>
+      <Items layoutGridFill={gridType === 2}>
         {products.length > 0 ? (
           products.map(product => (
             <Product

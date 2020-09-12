@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface ItemProps {
+  layoutGridFill: boolean;
+}
 
 export const Container = styled.div`
   width: 90%;
@@ -71,7 +75,12 @@ export const View = styled.div`
   display: none;
   padding-left: 2px;
 
-  svg + svg {
+  button {
+    background: none;
+    border: none;
+  }
+
+  button + button {
     margin-left: 5px;
   }
 
@@ -82,13 +91,25 @@ export const View = styled.div`
   }
 `;
 
-export const Items = styled.ul`
+export const Items = styled.ul<ItemProps>`
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
 
   list-style: none;
+
+  ${props =>
+    props.layoutGridFill &&
+    css`
+      justify-content: space-around;
+      @media (min-width: 768px) {
+        li {
+          width: 35%;
+          margin-bottom: 15px !important;
+        }
+      }
+    `}
 `;
 
 export const EmptyState = styled.div`
