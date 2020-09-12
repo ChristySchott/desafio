@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 import { BiSearch } from 'react-icons/bi';
-import logoImg from '../../assets/logo.png';
+import logoImg from 'assets/logo.png';
 
+import { Link, NavLink } from 'react-router-dom';
 import {
   Container,
   Login,
@@ -12,6 +13,7 @@ import {
   Logo,
   SearchIcon,
   SearchInput,
+  SearchMobile,
 } from './styles';
 import Burger from '../Burger';
 import Menu from '../Menu';
@@ -19,15 +21,16 @@ import Input from '../Input';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
+  const [showSearchMobile, setShowSearchMobile] = useState(false);
 
   return (
     <Container>
       <Login>
         <div>
           <p>
-            <a href="/">Acesse sua Conta</a>
+            <Link to="/">Acesse sua Conta</Link>
             ou
-            <a href="/">Cadastre-se</a>
+            <Link to="/">Cadastre-se</Link>
           </p>
         </div>
       </Login>
@@ -36,18 +39,23 @@ const Header: React.FC = () => {
         <NavMobile>
           <div>
             <Burger open={open} setOpen={setOpen} />
-            <Menu open={open} />
+            <Menu open={open} setOpen={setOpen} />
           </div>
         </NavMobile>
 
         <Logo>
-          <img
-            src={logoImg}
-            alt="Escrito Webjump com um símbolo de exclamação ao lado"
-          />
+          <Link to="/">
+            <img
+              src={logoImg}
+              alt="Escrito Webjump com um símbolo de exclamação ao lado"
+            />
+          </Link>
         </Logo>
 
-        <SearchIcon>
+        <SearchIcon
+          type="button"
+          onClick={() => setShowSearchMobile(!showSearchMobile)}
+        >
           <BiSearch size={25} color="#c81120" />
         </SearchIcon>
 
@@ -56,22 +64,36 @@ const Header: React.FC = () => {
         </SearchInput>
       </Content>
 
+      <SearchMobile className={showSearchMobile ? 'show' : ''}>
+        <Input />
+      </SearchMobile>
+
       <NavWeb>
         <ul>
           <li>
-            <a href="/">Página inicial</a>
+            <NavLink activeClassName="active" to="/" exact>
+              Página inicial
+            </NavLink>
           </li>
           <li>
-            <a href="/">Camisetas</a>
+            <NavLink activeClassName="active" to="/categories/camisetas">
+              Camisetas
+            </NavLink>
           </li>
           <li>
-            <a href="/">Calças</a>
+            <NavLink activeClassName="active" to="/categories/calcas">
+              Calças
+            </NavLink>
           </li>
           <li>
-            <a href="/">Sapatos</a>
+            <NavLink activeClassName="active" to="/categories/calcados">
+              Calçados
+            </NavLink>
           </li>
           <li>
-            <a href="/">Contato</a>
+            <NavLink activeClassName="active" to="/cart">
+              Carrinho
+            </NavLink>
           </li>
         </ul>
       </NavWeb>

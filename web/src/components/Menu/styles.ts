@@ -17,6 +17,7 @@ const Container = styled.nav<ContainerProps>`
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 20;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 0.3s ease-in-out;
 
@@ -29,7 +30,10 @@ const Container = styled.nav<ContainerProps>`
     text-align: center;
   }
 
+  button,
   a {
+    background: transparent;
+    border: none;
     display: block;
     font-size: 2rem;
     text-transform: uppercase;
@@ -48,6 +52,13 @@ const Container = styled.nav<ContainerProps>`
     &:hover {
       color: #ddd;
     }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 `;
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.header``;
 
 export const Login = styled.div`
   width: 100%;
@@ -47,7 +47,7 @@ export const Content = styled.div`
   justify-content: space-between;
   padding: 15px 20px;
 
-  max-width: 1048px;
+  max-width: 1000px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
@@ -56,6 +56,10 @@ export const Content = styled.div`
 
   @media (min-width: 1024px) {
     padding: 25px 0;
+  }
+
+  @media (min-width: 1060px) {
+    max-width: 1048px;
   }
 `;
 
@@ -73,8 +77,25 @@ export const NavWeb = styled.div`
   background: #c61a28;
   padding: 15px 0;
 
+  .active {
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 34px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background: #5dbcd2;
+    }
+  }
+
   @media (min-width: 768px) {
     display: block;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 15px;
   }
 
   ul {
@@ -86,6 +107,10 @@ export const NavWeb = styled.div`
     justify-content: space-between;
     list-style: none;
 
+    li {
+      position: relative;
+    }
+
     @media (min-width: 1024px) {
       justify-content: flex-start;
       padding: 0;
@@ -95,23 +120,35 @@ export const NavWeb = styled.div`
       }
     }
 
-    a {
+    a,
+    button {
+      background: transparent;
+      border: none;
       color: #fff;
       font-size: 1.6rem;
       font-weight: 600;
       text-decoration: none;
       text-transform: uppercase;
+      transition: color 0.2s;
+
+      position: relative;
     }
   }
 `;
 
 export const Logo = styled.div`
+  @media (min-width: 768px) {
+    width: 180px;
+  }
   img {
+    width: 100%;
     margin-top: 4px;
   }
 `;
 
-export const SearchIcon = styled.div`
+export const SearchIcon = styled.button`
+  background: none;
+  border: none;
   display: block;
 
   @media (min-width: 768px) {
@@ -125,5 +162,23 @@ export const SearchInput = styled.div`
 
   @media (min-width: 768px) {
     display: block;
+  }
+`;
+
+export const SearchMobile = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+
+  &.show {
+    opacity: 1;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;

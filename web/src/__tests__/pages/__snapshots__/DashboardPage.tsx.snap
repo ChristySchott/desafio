@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard Page should render with no error 1`] = `
+<div
+  class="sc-hKFyIo Zhoa-D"
+>
+  <h3>
+    Categorias
+  </h3>
+</div>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paginator /> should render with no error 1`] = `
+<section
+  class="sc-bdnylx fEYpyv"
+>
+  <ul
+    class="sc-gtssRu kscDjb"
+  >
+    <a
+      class="sc-dlnjPT dJGKuS"
+    />
+  </ul>
+</section>
+`;
