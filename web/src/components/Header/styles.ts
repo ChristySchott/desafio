@@ -146,7 +146,9 @@ export const Logo = styled.div`
   }
 `;
 
-export const SearchIcon = styled.div`
+export const SearchIcon = styled.button`
+  background: none;
+  border: none;
   display: block;
 
   @media (min-width: 768px) {
@@ -160,5 +162,23 @@ export const SearchInput = styled.div`
 
   @media (min-width: 768px) {
     display: block;
+  }
+`;
+
+export const SearchMobile = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease;
+
+  &.show {
+    opacity: 1;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;

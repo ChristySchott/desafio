@@ -13,6 +13,7 @@ import {
   Logo,
   SearchIcon,
   SearchInput,
+  SearchMobile,
 } from './styles';
 import Burger from '../Burger';
 import Menu from '../Menu';
@@ -20,6 +21,8 @@ import Input from '../Input';
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
+  const [showSearchMobile, setShowSearchMobile] = useState(false);
+
   return (
     <Container>
       <Login>
@@ -49,7 +52,10 @@ const Header: React.FC = () => {
           </Link>
         </Logo>
 
-        <SearchIcon>
+        <SearchIcon
+          type="button"
+          onClick={() => setShowSearchMobile(!showSearchMobile)}
+        >
           <BiSearch size={25} color="#c81120" />
         </SearchIcon>
 
@@ -57,6 +63,10 @@ const Header: React.FC = () => {
           <Input />
         </SearchInput>
       </Content>
+
+      <SearchMobile className={showSearchMobile ? 'show' : ''}>
+        <Input />
+      </SearchMobile>
 
       <NavWeb>
         <ul>
