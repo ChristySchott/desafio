@@ -2,7 +2,7 @@
 
 exports[`<Burger /> should render with no error 1`] = `
 <button
-  class="sc-bdnylx jvTlmv"
+  class="sc-bdnylx kAubux"
   open=""
 >
   <div />

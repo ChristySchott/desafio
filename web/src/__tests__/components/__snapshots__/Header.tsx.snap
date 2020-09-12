@@ -31,14 +31,14 @@ exports[`<Header /> should render with no error 1`] = `
     >
       <div>
         <button
-          class="sc-fujyUd hjIYgO"
+          class="sc-fujyUd eZaVQk"
         >
           <div />
           <div />
           <div />
         </button>
         <nav
-          class="sc-pNWxx eiFkBv"
+          class="sc-pNWxx emPlWH"
         >
           <ul>
             <li>
