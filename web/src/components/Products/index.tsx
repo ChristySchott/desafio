@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-curly-newline */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
@@ -22,14 +23,14 @@ interface CategoryParams {
   category: string;
 }
 
-interface OptionTypes {
+interface OptionType {
   value: string;
   label: string;
 }
 
-const orderOptions: OptionTypes[] = [
-  { value: 'preço', label: 'Preço' },
-  { value: 'data', label: 'Data' },
+const orderOptions: OptionType[] = [
+  { value: 'DESC', label: 'Maior preço' },
+  { value: 'CRESC', label: 'Menor preço' },
 ];
 
 const Products: React.FC = () => {
@@ -39,6 +40,7 @@ const Products: React.FC = () => {
 
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchOrder, setSearchOrder] = useState('CRESC');
 
   let filters = '';
   let filterByColor = '';
@@ -58,12 +60,16 @@ const Products: React.FC = () => {
   useEffect(() => {
     async function loadProducts(): Promise<void> {
       const response = await api.get(
-        `/${params.category}${filters}?_page=${currentPage}&_limit=8`,
+        `/${params.category}${filters}?_page=${currentPage}&_limit=8&_sort=price&_order=${searchOrder}`,
       );
       setProducts(response.data);
     }
     loadProducts();
-  }, [params.category, filter, colorToFilter, currentPage]);
+  }, [params.category, filter, colorToFilter, currentPage, searchOrder]);
+
+  function handleChange(option: string) {
+    setSearchOrder(option);
+  }
 
   return (
     <Container>
@@ -89,9 +95,13 @@ const Products: React.FC = () => {
           <span>Ordenar por</span>
           <Select
             name="orderBy"
-            placeholder="Preço"
+            placeholder="Menor Preço"
             options={orderOptions}
-            value="order"
+            value={orderOptions.filter(option => option.value === searchOrder)}
+            onChange={(selected: OptionType) =>
+              handleChange((selected as OptionType).value)
+            }
+            getOptionValue={({ value }: OptionType) => value}
           />
         </OrderBy>
       </Menu>

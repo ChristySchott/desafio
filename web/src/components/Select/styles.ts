@@ -43,7 +43,7 @@ export const Box = styled.section`
     padding-left: 10px !important;
     appearance: none;
     border: 1px solid #ddd;
-    background: #fff;
+    background: #fff !important;
     background-repeat: no-repeat;
     background-position: 90% center;
     background-size: auto;
@@ -90,15 +90,14 @@ export const Box = styled.section`
     align-items: center;
     cursor: pointer;
     opacity: 1;
+    background-color: #fff;
+    color: #888;
     &:hover {
-      background-color: #fff;
+      background-color: #eeefff;
     }
   }
   .css-9gakcf-option {
-    color: #414252;
-  }
-  .css-9gakcf-option:hover {
-    color: #414252 !important;
+    color: #888;
   }
   .css-1n7v3ny-option {
     background-color: #fff;
