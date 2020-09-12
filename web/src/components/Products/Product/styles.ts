@@ -3,7 +3,7 @@ import { shade } from 'polished';
 
 export const Container = styled.li`
   margin-top: 25px;
-  width: 135px;
+  width: 100%;
 
   @media (min-width: 768px) {
     width: 150px;
