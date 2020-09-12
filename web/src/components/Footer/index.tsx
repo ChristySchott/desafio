@@ -7,7 +7,8 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from 'react-icons/ai';
-import logo from 'assets/logo.png';
+
+import logo from 'assets/logo_branco.png';
 import {
   Wrapper,
   Content,
