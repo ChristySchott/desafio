@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
+import { useSearch } from 'hooks/search';
 import Container from './styles';
 
 const Input: React.FC = () => {
+  const { setSearch } = useSearch();
+
+  const [inputValue, setInputValue] = useState('');
+
+  function handleChange(event: ChangeEvent<HTMLInputElement>) {
+    setInputValue(event.target.value);
+  }
+
+  function handleSearch() {
+    setSearch(inputValue);
+  }
+
   return (
     <Container>
-      <input />
-      <button type="submit" name="search">
+      <input
+        name="search"
+        value={inputValue}
+        onChange={handleChange}
+        onKeyPress={handleSearch}
+      />
+      <button type="button" name="button-search" onClick={handleSearch}>
         Buscar
       </button>
     </Container>

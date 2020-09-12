@@ -12,6 +12,7 @@ import { useFilter } from 'hooks/filter';
 import { useColorFilter } from 'hooks/color';
 import TagFilter from 'components/TagFilter';
 import { ProductInterface } from 'hooks/cart';
+import { useSearch } from 'hooks/search';
 import Product from './Product';
 
 import Select from '../Select';
@@ -38,6 +39,7 @@ const Products: React.FC = () => {
 
   const { filter, setFilter } = useFilter();
   const { colorToFilter, setColorToFilter } = useColorFilter();
+  const { search } = useSearch();
 
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -62,12 +64,19 @@ const Products: React.FC = () => {
   useEffect(() => {
     async function loadProducts(): Promise<void> {
       const response = await api.get(
-        `/${params.category}?_page=${currentPage}&_limit=8&_sort=price&_order=${searchOrder}${filters}`,
+        `/${params.category}?_page=${currentPage}&_limit=8&_sort=price&_order=${searchOrder}${filters}&q=${search}`,
       );
       setProducts(response.data);
     }
     loadProducts();
-  }, [params.category, filter, colorToFilter, currentPage, searchOrder]);
+  }, [
+    params.category,
+    filter,
+    colorToFilter,
+    currentPage,
+    searchOrder,
+    search,
+  ]);
 
   useEffect(() => {
     setCurrentPage(1);
