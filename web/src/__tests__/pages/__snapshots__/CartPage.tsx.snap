@@ -6,7 +6,7 @@ exports[`Cart Page should render with no error 1`] = `
 >
   <ul>
     <div
-      class="sc-bdnylx jHJelA"
+      class="sc-bdnylx kerNgH"
     >
       <header>
         <h2>
@@ -17,7 +17,7 @@ exports[`Cart Page should render with no error 1`] = `
         class="sc-gtssRu eWCgwA"
       />
       <div
-        class="sc-dlnjPT lcvNAZ"
+        class="sc-dlnjPT gwKBBX"
       >
         <svg
           color="#c61a28"

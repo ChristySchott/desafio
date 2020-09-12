@@ -8,13 +8,17 @@ export const Wrapper = styled.footer`
   width: 100%;
   background: #c61a28;
   padding: 20px 10px;
+  margin-top: 40px;
+
   @media (min-width: 768px) {
     padding: 20px 10px 10px;
   }
+
   li,
   a {
     color: #fff;
   }
+
   h4 {
     font-size: 1.7rem;
     text-align: center;
@@ -31,11 +35,13 @@ export const Content = styled.div`
   max-width: 1048px;
   box-sizing: border-box;
   padding: 20px 0;
+
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
     padding: 10px 0;
   }
+
   @media (min-width: 768px) {
     justify-content: space-between;
     padding: 10px;
@@ -49,6 +55,7 @@ export const Logo = styled.a`
   width: auto;
   margin: 0 20px;
   outline: none;
+
   p {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -57,6 +64,7 @@ export const Logo = styled.a`
     color: #fff;
     margin-top: 10px;
   }
+
   @media (min-width: 1024px) {
     flex: 0.5;
   }
@@ -65,24 +73,30 @@ export const Logo = styled.a`
 export const Magento = styled.div`
   width: 100%;
   margin-top: 15px;
+
   @media (min-width: 768px) {
     margin-top: 0;
   }
+
   @media (min-width: 1024px) {
     flex: 1;
   }
+
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+
     @media (min-width: 768px) {
       align-items: flex-start;
       padding-left: 36.1%;
     }
+
     @media (min-width: 1024px) {
       padding-left: 40%;
     }
+
     li {
       font-size: 1.5rem;
     }
@@ -95,15 +109,19 @@ export const Connect = styled.div`
   flex-direction: column;
   width: 100%;
   margin-top: 20px;
+
   @media (min-width: 768px) {
     margin-top: 0;
   }
+
   @media (min-width: 1024px) {
     flex: 1;
   }
+
   h4 {
     margin-bottom: 15px;
   }
+
   > div {
     display: flex;
     align-items: center;
@@ -113,10 +131,12 @@ export const Connect = styled.div`
     height: 45px;
     width: 220px;
     margin-bottom: 10px;
+
     > div {
       width: 100%;
       justify-content: flex-end;
     }
+
     h4 {
       font-size: 1.5rem;
       font-weight: 500;
@@ -130,6 +150,7 @@ export const ContactSocialMedias = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   a {
     display: block;
     cursor: pointer;
@@ -150,6 +171,7 @@ export const Copyright = styled.div`
   font-size: 1.1rem;
   line-height: 1.4;
   color: #eee;
+
   @media (min-width: 768px) {
     margin-top: 10px;
     padding: 5px;

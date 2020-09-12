@@ -27,9 +27,13 @@ const Paginator: React.FC<PaginatorProps> = ({
             <FiChevronLeft size={20} color="#5dbcd2" />
           </PaginatorLink>
         )}
-        <Switch>
-          <Page>{currentPage}</Page>
-        </Switch>
+        {currentPage === 1 && !showNextPage ? (
+          ''
+        ) : (
+          <Switch>
+            <Page>{currentPage}</Page>
+          </Switch>
+        )}
         {showNextPage && (
           <PaginatorLink onClick={onClickNext}>
             <FiChevronRight size={20} color="#5dbcd2" />

@@ -6,6 +6,7 @@ import Cart from 'pages/Cart';
 import Header from 'components/Header';
 import Category from 'pages/Category';
 import Dashboard from 'pages/Dashboard';
+import Footer from 'components/Footer';
 
 const Routes: React.FC = () => (
   <Router>
@@ -15,6 +16,7 @@ const Routes: React.FC = () => (
       <Route path="/categories/:category" component={Category} />
       <Route path="/cart" component={Cart} />
     </Switch>
+    <Footer />
   </Router>
 );
 
