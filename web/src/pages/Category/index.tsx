@@ -4,6 +4,7 @@ import { useRouteMatch, Link } from 'react-router-dom';
 import Filters from 'components/Filters';
 import Products from 'components/Products';
 import CartInfos from 'components/CartInfos';
+
 import { Main, Page } from './styles';
 
 interface CategoryParams {

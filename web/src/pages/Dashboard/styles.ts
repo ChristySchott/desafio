@@ -1,22 +1,30 @@
 import styled from 'styled-components';
 
-export const Main = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1048px;
-  margin: 0 auto;
-  position: relative;
+export const Main = styled.main`
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1048px;
+    margin: 10px auto 20px;
+    position: relative;
 
-  @media (min-width: 768px) {
-    align-items: flex-start;
-    flex-direction: row;
-    margin-top: 20px;
-    padding: 0 15px;
-  }
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding: 0 15px;
 
-  @media (min-width: 1440px) {
-    padding: 0;
+      li {
+        width: 32%;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0;
+    }
   }
 `;
 
