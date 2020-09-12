@@ -18,7 +18,7 @@ const Category: React.FC = () => {
         <p>
           <Link to="/">Página Inicial </Link>
           &gt;
-          <span>{params.category}</span>
+          <span>{params.category.replace('lc', 'lç')}</span>
         </p>
       </Page>
       <Main>

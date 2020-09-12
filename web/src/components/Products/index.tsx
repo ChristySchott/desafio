@@ -78,7 +78,7 @@ const Products: React.FC = () => {
   return (
     <Container>
       <header>
-        <h2>Oi</h2>
+        <h2>{params.category.replace('lc', 'lç')}</h2>
         <div>
           {filter && <TagFilter name={filter} onRemove={() => setFilter('')} />}
           {colorToFilter && (
