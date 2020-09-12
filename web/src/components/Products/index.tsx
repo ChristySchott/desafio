@@ -48,24 +48,28 @@ const Products: React.FC = () => {
     filters = '';
 
     if (filter) {
-      filters = `?&filter.type=${filter}`;
+      filters = `&filter.type=${filter}`;
       filterByColor = `&filter.type=${filter}`;
     }
 
     if (colorToFilter) {
-      filters = `?${filterByColor}&filter.color=${colorToFilter}`;
+      filters = `${filterByColor}&filter.color=${colorToFilter}`;
     }
   }, [filter, colorToFilter]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
       const response = await api.get(
-        `/${params.category}${filters}?_page=${currentPage}&_limit=8&_sort=price&_order=${searchOrder}`,
+        `/${params.category}?_page=${currentPage}&_limit=8&_sort=price&_order=${searchOrder}${filters}`,
       );
       setProducts(response.data);
     }
     loadProducts();
   }, [params.category, filter, colorToFilter, currentPage, searchOrder]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [params.category]);
 
   function handleChange(option: string) {
     setSearchOrder(option);
