@@ -128,7 +128,7 @@ const Products: React.FC = () => {
             <Product
               key={product.id}
               imageUrl={product.image}
-              alt="Tênis azul da Adidas com cadarços rosas"
+              alt={product.name}
               name={product.name}
               price={product.price}
               offer={product.specialPrice}

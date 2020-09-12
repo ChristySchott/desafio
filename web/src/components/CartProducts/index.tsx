@@ -25,7 +25,7 @@ const CartProducts: React.FC = () => {
                   key={product.id}
                   productId={product.id}
                   imageUrl={product.image}
-                  alt="Tênis azul da Adidas com cadarços rosas"
+                  alt={product.name}
                   name={product.name}
                   price={product.price}
                   item={product}
