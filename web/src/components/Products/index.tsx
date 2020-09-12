@@ -36,30 +36,34 @@ const Products: React.FC = () => {
   const { params } = useRouteMatch<CategoryParams>();
   const { filter, setFilter } = useFilter();
   const { colorToFilter, setColorToFilter } = useColorFilter();
+
   const [products, setProducts] = useState<ProductInterface[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   let filters = '';
-  let filterByType = '';
+  let filterByColor = '';
   useEffect(() => {
     filters = '';
 
     if (filter) {
       filters = `?&filter.type=${filter}`;
-      filterByType = `&filter.type=${filter}`;
+      filterByColor = `&filter.type=${filter}`;
     }
 
     if (colorToFilter) {
-      filters = `?${filterByType}&filter.color=${colorToFilter}`;
+      filters = `?${filterByColor}&filter.color=${colorToFilter}`;
     }
   }, [filter, colorToFilter]);
 
   useEffect(() => {
     async function loadProducts(): Promise<void> {
-      const response = await api.get(`/${params.category}${filters}`);
+      const response = await api.get(
+        `/${params.category}${filters}?_page=${currentPage}&_limit=8`,
+      );
       setProducts(response.data);
     }
     loadProducts();
-  }, [params.category, filter, colorToFilter]);
+  }, [params.category, filter, colorToFilter, currentPage]);
 
   return (
     <Container>
@@ -112,7 +116,12 @@ const Products: React.FC = () => {
           </EmptyState>
         )}
       </Items>
-      <Paginator />
+      <Paginator
+        currentPage={currentPage}
+        onClickPrevious={() => setCurrentPage(currentPage - 1)}
+        onClickNext={() => setCurrentPage(currentPage + 1)}
+        showNextPage={products.length > 0}
+      />
     </Container>
   );
 };

@@ -4,19 +4,37 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 import { Wrapper, Switch, Page, PaginatorLink } from './styles';
 
-const Paginator: React.FC = () => {
+interface PaginatorProps {
+  onClickPrevious: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void;
+  onClickNext: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  currentPage: number;
+  showNextPage: boolean;
+}
+
+const Paginator: React.FC<PaginatorProps> = ({
+  onClickPrevious,
+  onClickNext,
+  currentPage,
+  showNextPage,
+}) => {
   return (
     <>
       <Wrapper>
-        <PaginatorLink>
-          <FiChevronLeft size={20} color="#5dbcd2" />
-        </PaginatorLink>
+        {currentPage > 1 && (
+          <PaginatorLink onClick={onClickPrevious}>
+            <FiChevronLeft size={20} color="#5dbcd2" />
+          </PaginatorLink>
+        )}
         <Switch>
-          <Page>1</Page>
+          <Page>{currentPage}</Page>
         </Switch>
-        <PaginatorLink>
-          <FiChevronRight size={20} color="#5dbcd2" />
-        </PaginatorLink>
+        {showNextPage && (
+          <PaginatorLink onClick={onClickNext}>
+            <FiChevronRight size={20} color="#5dbcd2" />
+          </PaginatorLink>
+        )}
       </Wrapper>
     </>
   );

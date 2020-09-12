@@ -8,6 +8,11 @@ export const Wrapper = styled.section`
   max-width: 350px;
   margin: 12px auto;
 
+  @media (max-width: 320px) {
+    max-width: 90px;
+    padding: 5px 10px;
+  }
+
   a {
     text-decoration: none;
     transition: color 0.5s;
@@ -35,4 +40,8 @@ export const Page = styled.a`
   }
 `;
 
-export const PaginatorLink = styled.a``;
+export const PaginatorLink = styled.button`
+  background: none;
+  border: none;
+  max-height: 23px;
+`;
